@@ -1,0 +1,894 @@
+starting: Mon Oct 7 01:35:18 PM EDT 2024
+
+[master 147f1fc] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/dl-02-02-10g-raptor
+Added dl-02-02-10g-raptor
+[master 375ef70] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/drl-02-01-dell-1g
+Added drl-02-01-dell-1g
+[master 474efae] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/drl-02-01-viper
+Added drl-02-01-viper
+[master 78a6dc8] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/drl-02-02-dell-1g
+Added drl-02-02-dell-1g
+[master 2995aa1] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/hpc-qumulo-1g
+Added hpc-qumulo-1g
+[master eba9301] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/hpc01-10g
+Added hpc01-10g
+[master 07ed614] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/hpc01-1g
+Added hpc01-1g
+[master 3bb3862] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/hpc01-arista-uplink
+Added hpc01-arista-uplink
+[master 01bb4f5] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/hpc03-10g
+Added hpc03-10g
+[master c7751d3] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/hpc03-1g
+Added hpc03-1g
+[master 41bbecc] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/hpc04-10g
+Added hpc04-10g
+[master b4809c8] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/hpc04-40g-a1
+Added hpc04-40g-a1
+[master 57591ed] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/hpc04-40g-a2
+Added hpc04-40g-a2
+[master de0a1f4] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/hpc05-10g
+Added hpc05-10g
+[master 6037df3] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/hpc05-1g
+Added hpc05-1g
+[master 67cf541] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/hpc06-10g
+Added hpc06-10g
+[master e12f11f] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/hpc07-10g
+Added hpc07-10g
+[master e34e8dd] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/hpc08-10g
+Added hpc08-10g
+[master 7111c7b] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/hpc08-1g
+Added hpc08-1g
+[master 98153f1] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/hpc09-10g
+Added hpc09-10g
+[master cf525fb] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/hpc09-1g-a
+Added hpc09-1g-a
+[master 5ca4a83] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/hpc09-1g-b
+Added hpc09-1g-b
+[master 3f1687f] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/hpc10-10g
+Added hpc10-10g
+[master c756998] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/hpc10-1g
+Added hpc10-1g
+[master 1c3c105] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/rts-z9100
+Added rts-z9100
+[master 4686dd3] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/s3048-on-1
+Added s3048-on-1
+[master 3ad6a4a] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/s3048-on-2
+Added s3048-on-2
+[master 5ba3b63] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/s3048-on-3
+Added s3048-on-3
+[master 270e8c3] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/s3048-on-4
+Added s3048-on-4
+[master d7517b0] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/s3048-on-5
+Added s3048-on-5
+[master 8dd700a] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/s3048-on-6
+Added s3048-on-6
+[master c6fe225] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/s5048f-on-1
+Added s5048f-on-1
+[master 869becb] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/s5048f-on-2
+Added s5048f-on-2
+[master 607edff] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/s5048f-on-3
+Added s5048f-on-3
+[master b2ebb74] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/s5048f-on-4
+Added s5048f-on-4
+[master 4b21b5f] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/s5048f-on-5
+Added s5048f-on-5
+[master ea547d1] new router
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 configs/s5048f-on-6
+Added s5048f-on-6
+
+
+
+Trying to get all of the configs.
+drl-02-02-dell-1g: missed cmd(s): all commands
+drl-02-02-dell-1g: End of run not found
+drl-02-02-dell-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+drl-02-01-dell-1g: missed cmd(s): all commands
+drl-02-01-dell-1g: End of run not found
+drl-02-01-dell-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc-qumulo-1g: missed cmd(s): all commands
+hpc-qumulo-1g: End of run not found
+hpc-qumulo-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+drl-02-01-viper: missed cmd(s): all commands
+drl-02-01-viper: End of run not found
+drl-02-01-viper clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+dl-02-02-10g-raptor: missed cmd(s): all commands
+dl-02-02-10g-raptor: End of run not found
+dl-02-02-10g-raptor clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+!
+!
+!
+hpc01-1g: missed cmd(s): all commands
+hpc01-1g: End of run not found
+hpc01-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc03-1g: missed cmd(s): all commands
+hpc03-1g: End of run not found
+hpc03-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+hpc01-arista-uplink: missed cmd(s): all commands
+hpc01-arista-uplink: End of run not found
+hpc01-arista-uplink clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc03-10g: missed cmd(s): all commands
+hpc03-10g: End of run not found
+hpc03-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc01-10g: missed cmd(s): all commands
+hpc01-10g: End of run not found
+hpc01-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+!
+hpc04-10g: missed cmd(s): all commands
+hpc04-10g: End of run not found
+hpc04-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc04-40g-a1: missed cmd(s): all commands
+hpc04-40g-a1: End of run not found
+hpc04-40g-a1 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc05-1g: missed cmd(s): all commands
+hpc05-1g: End of run not found
+hpc05-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+hpc04-40g-a2: missed cmd(s): all commands
+hpc04-40g-a2: End of run not found
+hpc04-40g-a2 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc05-10g: missed cmd(s): all commands
+hpc05-10g: End of run not found
+hpc05-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+unknown router manufacturer for hpc08-1g: rancid
+hpc08-10g: missed cmd(s): all commands
+hpc08-10g: End of run not found
+hpc08-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc06-10g: missed cmd(s): all commands
+hpc06-10g: End of run not found
+hpc06-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc07-10g: missed cmd(s): all commands
+hpc07-10g: End of run not found
+hpc07-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc09-10g: missed cmd(s): all commands
+hpc09-10g: End of run not found
+hpc09-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+!
+hpc09-1g-a: missed cmd(s): all commands
+hpc09-1g-a: End of run not found
+hpc09-1g-a hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc09-1g-b: missed cmd(s): all commands
+hpc09-1g-b: End of run not found
+hpc09-1g-b hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc10-10g: missed cmd(s): all commands
+hpc10-10g: End of run not found
+hpc10-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc10-1g: missed cmd(s): all commands
+hpc10-1g: End of run not found
+hpc10-1g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+rts-z9100: missed cmd(s): all commands
+rts-z9100: End of run not found
+rts-z9100 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s3048-on-1: missed cmd(s): all commands
+s3048-on-1: End of run not found
+s3048-on-1 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s3048-on-2: missed cmd(s): all commands
+s3048-on-2: End of run not found
+s3048-on-2 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s3048-on-4: missed cmd(s): all commands
+s3048-on-4: End of run not found
+s3048-on-4 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+s3048-on-3: missed cmd(s): all commands
+!
+s3048-on-3: End of run not found
+s3048-on-3 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s3048-on-5: missed cmd(s): all commands
+s3048-on-5: End of run not found
+s3048-on-5 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s3048-on-6: missed cmd(s): all commands
+s3048-on-6: End of run not found
+s3048-on-6 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s5048f-on-1: missed cmd(s): all commands
+s5048f-on-1: End of run not found
+s5048f-on-1 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s5048f-on-2: missed cmd(s): all commands
+s5048f-on-2: End of run not found
+s5048f-on-2 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+s5048f-on-3: missed cmd(s): all commands
+s5048f-on-3: End of run not found
+s5048f-on-3 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+s5048f-on-4: missed cmd(s): all commands
+s5048f-on-4: End of run not found
+s5048f-on-4 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s5048f-on-5: missed cmd(s): all commands
+s5048f-on-5: End of run not found
+s5048f-on-5 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s5048f-on-6: missed cmd(s): all commands
+s5048f-on-6: End of run not found
+s5048f-on-6 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+=====================================
+Getting missed routers: round 1.
+drl-02-01-dell-1g: missed cmd(s): all commands
+drl-02-01-dell-1g: End of run not found
+drl-02-01-dell-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+drl-02-02-dell-1g: missed cmd(s): all commands
+drl-02-02-dell-1g: End of run not found
+drl-02-02-dell-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+hpc-qumulo-1g: missed cmd(s): all commands
+hpc-qumulo-1g: End of run not found
+hpc-qumulo-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+drl-02-01-viper: missed cmd(s): all commands
+drl-02-01-viper: End of run not found
+drl-02-01-viper clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+dl-02-02-10g-raptor: missed cmd(s): all commands
+dl-02-02-10g-raptor: End of run not found
+dl-02-02-10g-raptor clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc01-1g: missed cmd(s): all commands
+hpc01-1g: End of run not found
+hpc01-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc01-10g: missed cmd(s): all commands
+hpc01-10g: End of run not found
+hpc01-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc01-arista-uplink: missed cmd(s): all commands
+hpc01-arista-uplink: End of run not found
+hpc01-arista-uplink clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc03-1g: missed cmd(s): all commands
+hpc03-1g: End of run not found
+hpc03-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+hpc03-10g: missed cmd(s): all commands
+hpc03-10g: End of run not found
+hpc03-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc04-10g: missed cmd(s): all commands
+hpc04-10g: End of run not found
+hpc04-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc05-1g: missed cmd(s): all commands
+hpc05-1g: End of run not found
+hpc05-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc04-40g-a1: missed cmd(s): all commands
+hpc04-40g-a1: End of run not found
+hpc04-40g-a1 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+hpc05-10g: missed cmd(s): all commands
+hpc05-10g: End of run not found
+hpc05-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc04-40g-a2: missed cmd(s): all commands
+hpc04-40g-a2: End of run not found
+hpc04-40g-a2 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+unknown router manufacturer for hpc08-1g: rancid
+hpc06-10g: missed cmd(s): all commands
+hpc06-10g: End of run not found
+hpc06-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc07-10g: missed cmd(s): all commands
+hpc07-10g: End of run not found
+hpc07-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc08-10g: missed cmd(s): all commands
+hpc08-10g: End of run not found
+hpc08-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc09-10g: missed cmd(s): all commands
+hpc09-10g: End of run not found
+hpc09-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc09-1g-a: missed cmd(s): all commands
+hpc09-1g-a: End of run not found
+hpc09-1g-a hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+hpc09-1g-b: missed cmd(s): all commands
+hpc09-1g-b: End of run not found
+hpc09-1g-b hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc10-10g: missed cmd(s): all commands
+hpc10-10g: End of run not found
+hpc10-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc10-1g: missed cmd(s): all commands
+hpc10-1g: End of run not found
+hpc10-1g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+s3048-on-1: missed cmd(s): all commands
+s3048-on-1: End of run not found
+s3048-on-1 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+rts-z9100: missed cmd(s): all commands
+rts-z9100: End of run not found
+rts-z9100 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+s3048-on-2: missed cmd(s): all commands
+s3048-on-2: End of run not found
+s3048-on-2 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s3048-on-3: missed cmd(s): all commands
+s3048-on-3: End of run not found
+s3048-on-3 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+s3048-on-4: missed cmd(s): all commands
+s3048-on-4: End of run not found
+s3048-on-4 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+s3048-on-5: missed cmd(s): all commands
+s3048-on-5: End of run not found
+s3048-on-5 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+s3048-on-6: missed cmd(s): all commands
+s3048-on-6: End of run not found
+s3048-on-6 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+s5048f-on-1: missed cmd(s): all commands
+s5048f-on-1: End of run not found
+s5048f-on-1 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s5048f-on-3: missed cmd(s): all commands
+s5048f-on-3: End of run not found
+s5048f-on-3 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s5048f-on-2: missed cmd(s): all commands
+s5048f-on-2: End of run not found
+s5048f-on-2 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s5048f-on-5: missed cmd(s): all commands
+s5048f-on-5: End of run not found
+s5048f-on-5 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+s5048f-on-4: missed cmd(s): all commands
+s5048f-on-4: End of run not found
+s5048f-on-4 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+s5048f-on-6: missed cmd(s): all commands
+s5048f-on-6: End of run not found
+s5048f-on-6 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+=====================================
+Getting missed routers: round 2.
+hpc-qumulo-1g: missed cmd(s): all commands
+hpc-qumulo-1g: End of run not found
+hpc-qumulo-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+drl-02-02-dell-1g: missed cmd(s): all commands
+drl-02-02-dell-1g: End of run not found
+drl-02-02-dell-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+drl-02-01-dell-1g: missed cmd(s): all commands
+drl-02-01-dell-1g: End of run not found
+drl-02-01-dell-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+!
+dl-02-02-10g-raptor: missed cmd(s): all commands
+dl-02-02-10g-raptor: End of run not found
+dl-02-02-10g-raptor clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+drl-02-01-viper: missed cmd(s): all commands
+drl-02-01-viper: End of run not found
+drl-02-01-viper clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+hpc01-1g: missed cmd(s): all commands
+hpc01-1g: End of run not found
+hpc01-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc01-10g: missed cmd(s): all commands
+hpc01-10g: End of run not found
+hpc01-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc01-arista-uplink: missed cmd(s): all commands
+hpc01-arista-uplink: End of run not found
+hpc01-arista-uplink clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc03-1g: missed cmd(s): all commands
+hpc03-1g: End of run not found
+hpc03-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc03-10g: missed cmd(s): all commands
+hpc03-10g: End of run not found
+hpc03-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+hpc04-10g: missed cmd(s): all commands
+hpc04-10g: End of run not found
+hpc04-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc05-1g: missed cmd(s): all commands
+hpc05-1g: End of run not found
+hpc05-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+hpc04-40g-a1: missed cmd(s): all commands
+hpc04-40g-a1: End of run not found
+hpc04-40g-a1 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc04-40g-a2: missed cmd(s): all commands
+hpc04-40g-a2: End of run not found
+hpc04-40g-a2 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc05-10g: missed cmd(s): all commands
+hpc05-10g: End of run not found
+hpc05-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+!
+unknown router manufacturer for hpc08-1g: rancid
+hpc06-10g: missed cmd(s): all commands
+hpc06-10g: End of run not found
+hpc06-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc07-10g: missed cmd(s): all commands
+hpc07-10g: End of run not found
+hpc07-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+hpc08-10g: missed cmd(s): all commands
+hpc08-10g: End of run not found
+hpc08-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc09-10g: missed cmd(s): all commands
+hpc09-10g: End of run not found
+hpc09-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+hpc09-1g-a: missed cmd(s): all commands
+hpc09-1g-a: End of run not found
+hpc09-1g-a hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc09-1g-b: missed cmd(s): all commands
+hpc09-1g-b: End of run not found
+hpc09-1g-b hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc10-1g: missed cmd(s): all commands
+hpc10-1g: End of run not found
+hpc10-1g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc10-10g: missed cmd(s): all commands
+hpc10-10g: End of run not found
+hpc10-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+s3048-on-1: missed cmd(s): all commands
+s3048-on-1: End of run not found
+s3048-on-1 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+rts-z9100: missed cmd(s): all commands
+rts-z9100: End of run not found
+rts-z9100 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s3048-on-2: missed cmd(s): all commands
+s3048-on-2: End of run not found
+s3048-on-2 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s3048-on-3: missed cmd(s): all commands
+s3048-on-3: End of run not found
+s3048-on-3 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+s3048-on-4: missed cmd(s): all commands
+s3048-on-4: End of run not found
+s3048-on-4 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s3048-on-5: missed cmd(s): all commands
+s3048-on-5: End of run not found
+s3048-on-5 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+s3048-on-6: missed cmd(s): all commands
+s3048-on-6: End of run not found
+s3048-on-6 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s5048f-on-1: missed cmd(s): all commands
+s5048f-on-1: End of run not found
+s5048f-on-1 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s5048f-on-2: missed cmd(s): all commands
+s5048f-on-2: End of run not found
+s5048f-on-2 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+s5048f-on-3: missed cmd(s): all commands
+s5048f-on-3: End of run not found
+s5048f-on-3 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+s5048f-on-4: missed cmd(s): all commands
+s5048f-on-4: End of run not found
+s5048f-on-4 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+!
+s5048f-on-5: missed cmd(s): all commands
+s5048f-on-5: End of run not found
+s5048f-on-5 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s5048f-on-6: missed cmd(s): all commands
+s5048f-on-6: End of run not found
+s5048f-on-6 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+=====================================
+Getting missed routers: round 3.
+hpc-qumulo-1g: missed cmd(s): all commands
+hpc-qumulo-1g: End of run not found
+hpc-qumulo-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+drl-02-01-dell-1g: missed cmd(s): all commands
+drl-02-01-dell-1g: End of run not found
+drl-02-01-dell-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+drl-02-02-dell-1g: missed cmd(s): all commands
+drl-02-02-dell-1g: End of run not found
+drl-02-02-dell-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+dl-02-02-10g-raptor: missed cmd(s): all commands
+dl-02-02-10g-raptor: End of run not found
+dl-02-02-10g-raptor clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+drl-02-01-viper: missed cmd(s): all commands
+drl-02-01-viper: End of run not found
+drl-02-01-viper clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+hpc01-1g: missed cmd(s): all commands
+hpc01-1g: End of run not found
+hpc01-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc03-1g: missed cmd(s): all commands
+hpc03-1g: End of run not found
+hpc03-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc01-10g: missed cmd(s): all commands
+hpc01-10g: End of run not found
+hpc01-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc01-arista-uplink: missed cmd(s): all commands
+hpc01-arista-uplink: End of run not found
+hpc01-arista-uplink clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc03-10g: missed cmd(s): all commands
+hpc03-10g: End of run not found
+hpc03-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+hpc04-10g: missed cmd(s): all commands
+hpc04-10g: End of run not found
+hpc04-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc05-1g: missed cmd(s): all commands
+hpc05-1g: End of run not found
+hpc05-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc04-40g-a2: missed cmd(s): all commands
+hpc04-40g-a2: End of run not found
+hpc04-40g-a2 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc04-40g-a1: missed cmd(s): all commands
+hpc04-40g-a1: End of run not found
+hpc04-40g-a1 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc05-10g: missed cmd(s): all commands
+hpc05-10g: End of run not found
+hpc05-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+!
+unknown router manufacturer for hpc08-1g: rancid
+hpc06-10g: missed cmd(s): all commands
+hpc06-10g: End of run not found
+hpc06-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc08-10g: missed cmd(s): all commands
+hpc08-10g: End of run not found
+hpc08-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc07-10g: missed cmd(s): all commands
+hpc07-10g: End of run not found
+hpc07-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc09-10g: missed cmd(s): all commands
+hpc09-10g: End of run not found
+hpc09-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+!
+hpc09-1g-a: missed cmd(s): all commands
+hpc09-1g-a: End of run not found
+hpc09-1g-a hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc09-1g-b: missed cmd(s): all commands
+hpc09-1g-b: End of run not found
+hpc09-1g-b hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc10-10g: missed cmd(s): all commands
+hpc10-10g: End of run not found
+hpc10-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc10-1g: missed cmd(s): all commands
+hpc10-1g: End of run not found
+hpc10-1g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+rts-z9100: missed cmd(s): all commands
+rts-z9100: End of run not found
+rts-z9100 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+s3048-on-1: missed cmd(s): all commands
+s3048-on-1: End of run not found
+s3048-on-1 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s3048-on-2: missed cmd(s): all commands
+s3048-on-2: End of run not found
+s3048-on-2 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s3048-on-3: missed cmd(s): all commands
+s3048-on-3: End of run not found
+s3048-on-3 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+s3048-on-4: missed cmd(s): all commands
+s3048-on-4: End of run not found
+s3048-on-4 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s3048-on-5: missed cmd(s): all commands
+s3048-on-5: End of run not found
+s3048-on-5 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+s3048-on-6: missed cmd(s): all commands
+s3048-on-6: End of run not found
+s3048-on-6 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s5048f-on-1: missed cmd(s): all commands
+s5048f-on-1: End of run not found
+s5048f-on-1 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s5048f-on-2: missed cmd(s): all commands
+s5048f-on-2: End of run not found
+s5048f-on-2 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+s5048f-on-3: missed cmd(s): all commands
+s5048f-on-3: End of run not found
+s5048f-on-3 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+s5048f-on-4: missed cmd(s): all commands
+s5048f-on-4: End of run not found
+s5048f-on-4 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+s5048f-on-5: missed cmd(s): all commands
+s5048f-on-5: End of run not found
+s5048f-on-5 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+s5048f-on-6: missed cmd(s): all commands
+s5048f-on-6: End of run not found
+s5048f-on-6 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+=====================================
+Getting missed routers: round 4.
+drl-02-01-dell-1g: missed cmd(s): all commands
+drl-02-01-dell-1g: End of run not found
+drl-02-01-dell-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+drl-02-02-dell-1g: missed cmd(s): all commands
+drl-02-02-dell-1g: End of run not found
+drl-02-02-dell-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc-qumulo-1g: missed cmd(s): all commands
+hpc-qumulo-1g: End of run not found
+hpc-qumulo-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+!
+drl-02-01-viper: missed cmd(s): all commands
+drl-02-01-viper: End of run not found
+drl-02-01-viper clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+dl-02-02-10g-raptor: missed cmd(s): all commands
+dl-02-02-10g-raptor: End of run not found
+dl-02-02-10g-raptor clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+hpc01-1g: missed cmd(s): all commands
+hpc01-1g: End of run not found
+hpc01-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc01-10g: missed cmd(s): all commands
+hpc01-10g: End of run not found
+hpc01-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc03-1g: missed cmd(s): all commands
+hpc03-1g: End of run not found
+hpc03-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc01-arista-uplink: missed cmd(s): all commands
+hpc01-arista-uplink: End of run not found
+hpc01-arista-uplink clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+hpc03-10g: missed cmd(s): all commands
+hpc03-10g: End of run not found
+hpc03-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc04-10g: missed cmd(s): all commands
+hpc04-10g: End of run not found
+hpc04-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc04-40g-a2: missed cmd(s): all commands
+hpc04-40g-a2: End of run not found
+hpc04-40g-a2 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc04-40g-a1: missed cmd(s): all commands
+hpc04-40g-a1: End of run not found
+hpc04-40g-a1 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc05-10g: missed cmd(s): all commands
+hpc05-10g: End of run not found
+hpc05-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc05-1g: missed cmd(s): all commands
+hpc05-1g: End of run not found
+hpc05-1g hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+!
+!
+unknown router manufacturer for hpc08-1g: rancid
+hpc06-10g: missed cmd(s): all commands
+hpc06-10g: End of run not found
+hpc06-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc07-10g: missed cmd(s): all commands
+hpc07-10g: End of run not found
+hpc07-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc08-10g: missed cmd(s): all commands
+hpc08-10g: End of run not found
+hpc08-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc09-10g: missed cmd(s): all commands
+hpc09-10g: End of run not found
+hpc09-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+!
+hpc09-1g-a: missed cmd(s): all commands
+hpc09-1g-a: End of run not found
+hpc09-1g-a hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc09-1g-b: missed cmd(s): all commands
+hpc09-1g-b: End of run not found
+hpc09-1g-b hlogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+hpc10-10g: missed cmd(s): all commands
+hpc10-10g: End of run not found
+hpc10-10g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+hpc10-1g: missed cmd(s): all commands
+hpc10-1g: End of run not found
+hpc10-1g clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+rts-z9100: missed cmd(s): all commands
+rts-z9100: End of run not found
+rts-z9100 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+s3048-on-1: missed cmd(s): all commands
+s3048-on-1: End of run not found
+s3048-on-1 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s3048-on-2: missed cmd(s): all commands
+s3048-on-2: End of run not found
+s3048-on-2 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s3048-on-3: missed cmd(s): all commands
+s3048-on-3: End of run not found
+s3048-on-3 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+s3048-on-4: missed cmd(s): all commands
+s3048-on-4: End of run not found
+s3048-on-4 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s3048-on-5: missed cmd(s): all commands
+s3048-on-5: End of run not found
+s3048-on-5 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+s3048-on-6: missed cmd(s): all commands
+s3048-on-6: End of run not found
+s3048-on-6 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s5048f-on-1: missed cmd(s): all commands
+s5048f-on-1: End of run not found
+s5048f-on-1 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s5048f-on-2: missed cmd(s): all commands
+s5048f-on-2: End of run not found
+s5048f-on-2 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s5048f-on-4: missed cmd(s): all commands
+s5048f-on-4: End of run not found
+s5048f-on-4 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+s5048f-on-3: missed cmd(s): all commands
+s5048f-on-3: End of run not found
+s5048f-on-3 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+!
+s5048f-on-5: missed cmd(s): all commands
+s5048f-on-5: End of run not found
+s5048f-on-5 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+s5048f-on-6: missed cmd(s): all commands
+s5048f-on-6: End of run not found
+s5048f-on-6 clogin error: Error: password file (/var/lib/rancid/.cloginrc) does not exist
+!
+
+[master ff9ebed] updates
+ 3 files changed, 112 insertions(+)
+To https://github.com/kevweiss/rancid.git
+   83a6604..ff9ebed  master -> master
+
+ending: Mon Oct 7 01:35:44 PM EDT 2024

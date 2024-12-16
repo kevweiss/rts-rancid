@@ -1,0 +1,225 @@
+!RANCID-CONTENT-TYPE: arista
+!
+!Model: FSOS Software, S5850, Version 7.4.3.r5
+!Model: Copyright (C) 2009-2022 FS.COM Inc.  All Rights Reserved.
+!Model: The current running image is flash:/boot/FSOS-S5850-24S2Q-v7.4.3.r5.r.bin
+!Model: Hardware Type is 24S2Q
+!Model: Hardware Version is 3.1
+!Model: SDRAM size 2048M
+!Model: Flash size 8192M
+!Model: BootRom Version is A.2.23
+!Model: System serial number is CG2206232960N00067
+!Model: Current Web Version is 7.4.3.r
+!
+!                       ^
+!
+!Flash: Directory of flash:/  
+!Flash: total 9320
+!Flash: -rw-r--r-- 1    1255 Jan  5  2023 649D990B8AC3.1.lic
+!Flash: -rw-r--r-- 1 8867338 Jan  5  2023 FSOS-webImage-v7.4.3.r.bin
+!Flash: drwxr-xr-x 2    4096 Jan 21  2023 boot
+!Flash: drwsrwsrwt 2    4096 Jan  5  2023 cfg
+!Flash: drwsrwsrwt 5    4096 Jan  5  2023 cold
+!Flash: drwsrwsrwt 3    4096 Jan  5  2023 conf
+!Flash: -rw-r----- 1     147 Oct 27  2023 dhcpsnooping
+!Flash: -rw-r----- 1     151 Oct 27  2023 dhcpv6snooping
+!Flash: drwsrwsrwt 2    4096 Jan 20  2023 info
+!Flash: drwsrwsrwt 2    4096 Jan  5  2023 log
+!Flash: drwsrwsrwt 3    4096 Jan  5  2023 monitor
+!Flash: drwsrwsrwt 2    4096 Jan  5  2023 reboot-info
+!Flash: -rw-r----- 1    3107 Oct 27  2023 startup-config.conf
+!Flash: -rw-r----- 1  618926 Jan 28  2023 syslog
+!Flash: 3.9G bytes total (3.6G bytes free) 
+!
+!
+!BootExtension:                        ^
+!Extensions:
+!                    ^
+!*****************************
+!*** unsaved changes exist ***
+!*****************************
+!                ^
+!% Invalid input detected at '^' marker.
+!
+Building configuration...
+version 7.4.3.r5
+!
+!
+no service password-encryption
+!
+http server load flash:/FSOS-webImage-v7.4.3.r.bin
+service http enable
+!
+logging level file alert
+logging server enable
+logging server address 161.253.199.145
+logging server address 2606:69c0:9120:782c:20c:29ff:fe0b:8d46
+logging operate enable
+!
+!
+hostname HPC01-FS.com
+!
+!enable password <removed>
+!
+!
+!username admin privilege 4 password <removed>
+!username rts-admin password <removed>
+!username shash password <removed>
+!
+!
+!
+!
+management ip address 192.168.1.1/24
+!
+!
+!
+!
+!
+port-channel 6 self-healing
+port-channel 12 load-balance-mode round-robin
+port-channel 12 lacp-mode dynamic
+!
+snmp-server enable 
+snmp-server community rts-network read-only 
+snmp-server version v2c
+snmp-server trap target-address 192.168.192.250 community rts-community 
+snmp-server trap target-address 192.168.192.249 community rts-community 
+!
+vlan database
+ vlan 730,740,772-774,776,786,789,792,799,4041,4045
+ vlan 740 name License-Management
+ vlan 772 name Storage
+ vlan 776 name Pegasus-IPv6
+ vlan 789 name starfish
+!
+
+interface eth-0-1
+ description STORAGE-1
+ switchport access vlan 799
+!
+interface eth-0-2
+ description STORAGE-2
+ switchport access vlan 799
+!
+interface eth-0-3
+ description UPLINK-TOR
+ switchport mode trunk
+ switchport trunk allowed vlan all
+!
+interface eth-0-4
+!
+interface eth-0-5
+ description Storage
+ switchport access vlan 799
+!
+interface eth-0-6
+ description Storage
+ switchport access vlan 799
+!
+interface eth-0-7
+ description ESXI-TRUNK
+ switchport mode trunk
+ switchport trunk allowed vlan all
+!
+interface eth-0-8
+ description ESXI-I-STORAGE 
+ switchport access vlan 799
+!
+interface eth-0-9
+ switchport access vlan 799
+!
+interface eth-0-10
+ switchport access vlan 799
+!
+interface eth-0-11
+!
+interface eth-0-12
+!
+interface eth-0-13
+ description vdi-node-1.dev.arc.gwu.edu
+ switchport mode trunk
+ switchport trunk allowed vlan all
+!
+interface eth-0-14
+ description vdi-node-2.dev.arc.gwu.edu
+ switchport mode trunk
+ switchport trunk allowed vlan all
+!
+interface eth-0-15
+ description zfi-dev.arc.gwu.edu
+ switchport access vlan 799
+!
+interface eth-0-16
+ switchport access vlan 774
+!
+interface eth-0-17
+ description True-NAS
+ switchport access vlan 773
+!
+interface eth-0-18
+!
+interface eth-0-19
+!
+interface eth-0-20
+!
+interface eth-0-21
+!
+interface eth-0-22
+!
+interface eth-0-23
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ channel-group 6 mode active
+!
+interface eth-0-24
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ channel-group 6 mode active
+!
+interface eth-0-25
+!
+interface eth-0-26
+!
+interface agg6
+ switchport mode trunk
+ switchport trunk allowed vlan all
+!
+interface vlan1
+ ip address dhcp
+!
+interface vlan730
+ description Network
+ mtu 9216
+ ip address 192.168.192.98/24
+!
+interface vlan740
+ mtu 9216
+!
+interface vlan772
+!
+interface vlan776
+ description Pegasus-IPv6
+!
+interface vlan789
+ mtu 9216
+!
+interface vlan4045
+ ip address 172.20.251.200/24
+!
+interface null0
+!
+lldp enable
+!
+!
+!
+line con 0
+ no line-password
+ no login
+line vty 0 7
+ exec-timeout 35791 0
+ privilege level 4
+ no line-password
+ login local
+!
+!
+end

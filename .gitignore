@@ -1,0 +1,10 @@
+/routers.all
+/routers.down
+/routers.single
+/routers.up
+/runcount
+.old
+*.new
+*.raw
+rancid_backup.tar.gz
+

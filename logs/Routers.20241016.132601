@@ -1,0 +1,631 @@
+starting: Wed Oct 16 01:26:01 PM EDT 2024
+
+
+
+Trying to get all of the configs.
+drl-02-01-dell-1g: missed cmd(s): all commands
+drl-02-01-dell-1g: End of run not found
+drl-02-01-dell-1g hlogin error: Error: Couldn't login
+!
+dl-02-02-10g-raptor: missed cmd(s): all commands
+dl-02-02-10g-raptor: End of run not found
+dl-02-02-10g-raptor clogin error: Error: Couldn't login: dl-02-02-10g-raptor
+drl-02-01-viper: missed cmd(s): all commands
+drl-02-01-viper: End of run not found
+drl-02-01-viper clogin error: Error: Couldn't login: drl-02-01-viper
+!
+!
+drl-02-02-dell-1g: missed cmd(s): all commands
+drl-02-02-dell-1g: End of run not found
+drl-02-02-dell-1g hlogin error: Error: Couldn't login
+!
+hpc01-1g: missed cmd(s): all commands
+hpc01-1g: End of run not found
+hpc01-1g hlogin error: Error: Couldn't login
+!
+hpc01-arista-uplink: missed cmd(s): all commands
+hpc01-arista-uplink: End of run not found
+hpc01-arista-uplink clogin error: Error: Couldn't login: hpc01-arista-uplink
+!
+hpc03-10g: missed cmd(s): all commands
+hpc03-10g: End of run not found
+hpc03-10g clogin error: Error: Couldn't login: hpc03-10g
+!
+hpc01-10g: missed cmd(s): all commands
+hpc01-10g: End of run not found
+hpc01-10g clogin error: Error: Check your passwd for hpc01-10g
+!
+hpc03-1g: missed cmd(s): all commands
+hpc03-1g: End of run not found
+hpc03-1g hlogin error: Error: Couldn't login
+!
+hpc04-10g: missed cmd(s): all commands
+hpc04-10g: End of run not found
+hpc04-10g clogin error: Error: Check your passwd for hpc04-10g
+!
+hpc-qumulo-1g: missed cmd(s): all commands
+hpc-qumulo-1g: End of run not found
+hpc-qumulo-1g hlogin error: Error: Couldn't login
+!
+hpc04-40g-a1: missed cmd(s): all commands
+hpc04-40g-a1: End of run not found
+hpc04-40g-a1 clogin error: Error: Check your passwd for hpc04-40g-a1
+!
+hpc05-1g: missed cmd(s): all commands
+hpc05-1g: End of run not found
+hpc05-1g hlogin error: Error: Couldn't login
+!
+hpc05-10g: missed cmd(s): all commands
+hpc05-10g: End of run not found
+hpc05-10g clogin error: Error: Check your passwd for hpc05-10g
+!
+unknown router manufacturer for hpc08-1g: rancid
+hpc04-40g-a2: missed cmd(s): all commands
+hpc04-40g-a2: End of run not found
+hpc04-40g-a2 clogin error: Error: Check your passwd for hpc04-40g-a2
+!
+hpc09-1g-a: missed cmd(s): all commands
+hpc09-1g-a: End of run not found
+hpc09-1g-a hlogin error: Error: Couldn't login
+!
+hpc07-10g: missed cmd(s): all commands
+hpc07-10g: End of run not found
+hpc07-10g clogin error: Error: Check your passwd for hpc07-10g
+!
+hpc08-10g: missed cmd(s): all commands
+hpc08-10g: End of run not found
+hpc08-10g clogin error: Error: Check your passwd for hpc08-10g
+!
+hpc09-1g-b: missed cmd(s): all commands
+hpc09-1g-b: End of run not found
+hpc09-1g-b hlogin error: Error: Couldn't login
+!
+hpc10-10g: missed cmd(s): all commands
+hpc10-10g: End of run not found
+hpc10-10g clogin error: Error: Check your passwd for hpc10-10g
+!
+hpc06-10g: missed cmd(s): all commands
+hpc06-10g: End of run not found
+hpc06-10g clogin error: Error: Couldn't login: hpc06-10g
+!
+hpc09-10g: missed cmd(s): all commands
+hpc09-10g: End of run not found
+hpc09-10g clogin error: Error: Couldn't login: hpc09-10g
+!
+s3048-on-1: missed cmd(s): all commands
+s3048-on-1: End of run not found
+s3048-on-1 clogin error: Error: Couldn't login: s3048-on-1
+!
+s3048-on-2: missed cmd(s): all commands
+s3048-on-2: End of run not found
+s3048-on-2 clogin error: Error: Couldn't login: s3048-on-2
+!
+s3048-on-3: missed cmd(s): all commands
+s3048-on-3: End of run not found
+s3048-on-3 clogin error: Error: Couldn't login: s3048-on-3
+!
+s3048-on-4: missed cmd(s): all commands
+s3048-on-4: End of run not found
+s3048-on-4 clogin error: Error: Couldn't login: s3048-on-4
+!
+s3048-on-5: missed cmd(s): all commands
+s3048-on-5: End of run not found
+s3048-on-5 clogin error: Error: Couldn't login: s3048-on-5
+!
+s5048f-on-3: missed cmd(s): all commands
+s5048f-on-3: End of run not found
+s5048f-on-3 clogin error: Error: Couldn't login: s5048f-on-3
+!
+=====================================
+Getting missed routers: round 1.
+drl-02-01-dell-1g: missed cmd(s): all commands
+drl-02-01-dell-1g: End of run not found
+drl-02-01-dell-1g hlogin error: Error: Couldn't login
+!
+drl-02-01-viper: missed cmd(s): all commands
+drl-02-01-viper: End of run not found
+drl-02-01-viper clogin error: Error: Couldn't login: drl-02-01-viper
+!
+dl-02-02-10g-raptor: missed cmd(s): all commands
+dl-02-02-10g-raptor: End of run not found
+dl-02-02-10g-raptor clogin error: Error: Couldn't login: dl-02-02-10g-raptor
+!
+drl-02-02-dell-1g: missed cmd(s): all commands
+drl-02-02-dell-1g: End of run not found
+drl-02-02-dell-1g hlogin error: Error: Couldn't login
+!
+hpc01-1g: missed cmd(s): all commands
+hpc01-1g: End of run not found
+hpc01-1g hlogin error: Error: Couldn't login
+!
+hpc01-arista-uplink: missed cmd(s): all commands
+hpc01-arista-uplink: End of run not found
+hpc01-arista-uplink clogin error: Error: Couldn't login: hpc01-arista-uplink
+!
+hpc03-10g: missed cmd(s): all commands
+hpc03-10g: End of run not found
+hpc03-10g clogin error: Error: Couldn't login: hpc03-10g
+!
+hpc01-10g: missed cmd(s): all commands
+hpc01-10g: End of run not found
+hpc01-10g clogin error: Error: Check your passwd for hpc01-10g
+!
+hpc03-1g: missed cmd(s): all commands
+hpc03-1g: End of run not found
+hpc03-1g hlogin error: Error: Couldn't login
+!
+hpc04-10g: missed cmd(s): all commands
+hpc04-10g: End of run not found
+hpc04-10g clogin error: Error: Check your passwd for hpc04-10g
+!
+hpc-qumulo-1g: missed cmd(s): all commands
+hpc-qumulo-1g: End of run not found
+hpc-qumulo-1g hlogin error: Error: Couldn't login
+!
+hpc04-40g-a1: missed cmd(s): all commands
+hpc04-40g-a1: End of run not found
+hpc04-40g-a1 clogin error: Error: Check your passwd for hpc04-40g-a1
+!
+hpc05-1g: missed cmd(s): all commands
+hpc05-1g: End of run not found
+hpc05-1g hlogin error: Error: Couldn't login
+!
+hpc05-10g: missed cmd(s): all commands
+hpc05-10g: End of run not found
+hpc05-10g clogin error: Error: Check your passwd for hpc05-10g
+!
+unknown router manufacturer for hpc08-1g: rancid
+hpc04-40g-a2: missed cmd(s): all commands
+hpc04-40g-a2: End of run not found
+hpc04-40g-a2 clogin error: Error: Check your passwd for hpc04-40g-a2
+!
+hpc09-1g-a: missed cmd(s): all commands
+hpc09-1g-a: End of run not found
+hpc09-1g-a hlogin error: Error: Couldn't login
+!
+hpc07-10g: missed cmd(s): all commands
+hpc07-10g: End of run not found
+hpc07-10g clogin error: Error: Check your passwd for hpc07-10g
+!
+hpc08-10g: missed cmd(s): all commands
+hpc08-10g: End of run not found
+hpc08-10g clogin error: Error: Check your passwd for hpc08-10g
+!
+hpc09-1g-b: missed cmd(s): all commands
+hpc09-1g-b: End of run not found
+hpc09-1g-b hlogin error: Error: Couldn't login
+!
+s3048-on-1: missed cmd(s): all commands
+s3048-on-1: End of run not found
+s3048-on-1 clogin error: Error: Couldn't login: s3048-on-1
+!
+s3048-on-2: missed cmd(s): all commands
+s3048-on-2: End of run not found
+s3048-on-2 clogin error: Error: Couldn't login: s3048-on-2
+!
+hpc10-10g: missed cmd(s): all commands
+hpc10-10g: End of run not found
+hpc10-10g clogin error: Error: Check your passwd for hpc10-10g
+!
+s3048-on-3: missed cmd(s): all commands
+s3048-on-3: End of run not found
+s3048-on-3 clogin error: Error: Couldn't login: s3048-on-3
+!
+hpc06-10g: missed cmd(s): all commands
+hpc06-10g: End of run not found
+hpc06-10g clogin error: Error: Couldn't login: hpc06-10g
+!
+s3048-on-4: missed cmd(s): all commands
+s3048-on-4: End of run not found
+s3048-on-4 clogin error: Error: Couldn't login: s3048-on-4
+!
+s3048-on-5: missed cmd(s): all commands
+s3048-on-5: End of run not found
+s3048-on-5 clogin error: Error: Couldn't login: s3048-on-5
+!
+hpc09-10g: missed cmd(s): all commands
+hpc09-10g: End of run not found
+hpc09-10g clogin error: Error: Couldn't login: hpc09-10g
+!
+s5048f-on-3: missed cmd(s): all commands
+s5048f-on-3: End of run not found
+s5048f-on-3 clogin error: Error: Couldn't login: s5048f-on-3
+!
+s5048f-on-4: missed cmd(s): all commands
+s5048f-on-4: End of run not found
+s5048f-on-4 clogin error: Error: Couldn't login: s5048f-on-4
+!
+s5048f-on-5: missed cmd(s): all commands
+s5048f-on-5: End of run not found
+s5048f-on-5 clogin error: Error: Couldn't login: s5048f-on-5
+!
+s5048f-on-6: missed cmd(s): all commands
+s5048f-on-6: End of run not found
+s5048f-on-6 clogin error: Error: Couldn't login: s5048f-on-6
+!
+=====================================
+Getting missed routers: round 2.
+drl-02-01-dell-1g: missed cmd(s): all commands
+drl-02-01-dell-1g: End of run not found
+drl-02-01-dell-1g hlogin error: Error: Couldn't login
+!
+drl-02-01-viper: missed cmd(s): all commands
+drl-02-01-viper: End of run not found
+drl-02-01-viper clogin error: Error: Couldn't login: drl-02-01-viper
+dl-02-02-10g-raptor: missed cmd(s): all commands
+dl-02-02-10g-raptor: End of run not found
+dl-02-02-10g-raptor clogin error: Error: Couldn't login: dl-02-02-10g-raptor
+!
+!
+drl-02-02-dell-1g: missed cmd(s): all commands
+drl-02-02-dell-1g: End of run not found
+drl-02-02-dell-1g hlogin error: Error: Couldn't login
+!
+hpc01-1g: missed cmd(s): all commands
+hpc01-1g: End of run not found
+hpc01-1g hlogin error: Error: Couldn't login
+!
+hpc01-arista-uplink: missed cmd(s): all commands
+hpc01-arista-uplink: End of run not found
+hpc01-arista-uplink clogin error: Error: Couldn't login: hpc01-arista-uplink
+!
+hpc03-10g: missed cmd(s): all commands
+hpc03-10g: End of run not found
+hpc03-10g clogin error: Error: Couldn't login: hpc03-10g
+!
+hpc01-10g: missed cmd(s): all commands
+hpc01-10g: End of run not found
+hpc01-10g clogin error: Error: Check your passwd for hpc01-10g
+!
+hpc03-1g: missed cmd(s): all commands
+hpc03-1g: End of run not found
+hpc03-1g hlogin error: Error: Couldn't login
+!
+hpc04-10g: missed cmd(s): all commands
+hpc04-10g: End of run not found
+hpc04-10g clogin error: Error: Check your passwd for hpc04-10g
+!
+hpc-qumulo-1g: missed cmd(s): all commands
+hpc-qumulo-1g: End of run not found
+hpc-qumulo-1g hlogin error: Error: Couldn't login
+!
+hpc04-40g-a1: missed cmd(s): all commands
+hpc04-40g-a1: End of run not found
+hpc04-40g-a1 clogin error: Error: Check your passwd for hpc04-40g-a1
+!
+hpc05-1g: missed cmd(s): all commands
+hpc05-1g: End of run not found
+hpc05-1g hlogin error: Error: Couldn't login
+!
+hpc05-10g: missed cmd(s): all commands
+hpc05-10g: End of run not found
+hpc05-10g clogin error: Error: Check your passwd for hpc05-10g
+!
+unknown router manufacturer for hpc08-1g: rancid
+hpc04-40g-a2: missed cmd(s): all commands
+hpc04-40g-a2: End of run not found
+hpc04-40g-a2 clogin error: Error: Check your passwd for hpc04-40g-a2
+!
+hpc09-1g-a: missed cmd(s): all commands
+hpc09-1g-a: End of run not found
+hpc09-1g-a hlogin error: Error: Couldn't login
+!
+hpc07-10g: missed cmd(s): all commands
+hpc07-10g: End of run not found
+hpc07-10g clogin error: Error: Check your passwd for hpc07-10g
+!
+hpc08-10g: missed cmd(s): all commands
+hpc08-10g: End of run not found
+hpc08-10g clogin error: Error: Check your passwd for hpc08-10g
+!
+hpc09-1g-b: missed cmd(s): all commands
+hpc09-1g-b: End of run not found
+hpc09-1g-b hlogin error: Error: Couldn't login
+!
+s3048-on-1: missed cmd(s): all commands
+s3048-on-1: End of run not found
+s3048-on-1 clogin error: Error: Couldn't login: s3048-on-1
+!
+s3048-on-2: missed cmd(s): all commands
+s3048-on-2: End of run not found
+s3048-on-2 clogin error: Error: Couldn't login: s3048-on-2
+!
+hpc10-10g: missed cmd(s): all commands
+hpc10-10g: End of run not found
+hpc10-10g clogin error: Error: Check your passwd for hpc10-10g
+!
+s3048-on-3: missed cmd(s): all commands
+s3048-on-3: End of run not found
+s3048-on-3 clogin error: Error: Couldn't login: s3048-on-3
+!
+hpc06-10g: missed cmd(s): all commands
+hpc06-10g: End of run not found
+hpc06-10g clogin error: Error: Couldn't login: hpc06-10g
+!
+s3048-on-4: missed cmd(s): all commands
+s3048-on-4: End of run not found
+s3048-on-4 clogin error: Error: Couldn't login: s3048-on-4
+!
+s3048-on-5: missed cmd(s): all commands
+s3048-on-5: End of run not found
+s3048-on-5 clogin error: Error: Couldn't login: s3048-on-5
+!
+hpc09-10g: missed cmd(s): all commands
+hpc09-10g: End of run not found
+hpc09-10g clogin error: Error: Couldn't login: hpc09-10g
+!
+s5048f-on-3: missed cmd(s): all commands
+s5048f-on-3: End of run not found
+s5048f-on-3 clogin error: Error: Couldn't login: s5048f-on-3
+!
+s5048f-on-4: missed cmd(s): all commands
+s5048f-on-4: End of run not found
+s5048f-on-4 clogin error: Error: Couldn't login: s5048f-on-4
+!
+s5048f-on-5: missed cmd(s): all commands
+s5048f-on-5: End of run not found
+s5048f-on-5 clogin error: Error: Couldn't login: s5048f-on-5
+!
+s5048f-on-6: missed cmd(s): all commands
+s5048f-on-6: End of run not found
+s5048f-on-6 clogin error: Error: Couldn't login: s5048f-on-6
+!
+=====================================
+Getting missed routers: round 3.
+drl-02-01-dell-1g: missed cmd(s): all commands
+drl-02-01-dell-1g: End of run not found
+drl-02-01-dell-1g hlogin error: Error: Couldn't login
+!
+dl-02-02-10g-raptor: missed cmd(s): all commands
+dl-02-02-10g-raptor: End of run not found
+dl-02-02-10g-raptor clogin error: Error: Couldn't login: dl-02-02-10g-raptor
+drl-02-01-viper: missed cmd(s): all commands
+drl-02-01-viper: End of run not found
+drl-02-01-viper clogin error: Error: Couldn't login: drl-02-01-viper
+!
+!
+drl-02-02-dell-1g: missed cmd(s): all commands
+drl-02-02-dell-1g: End of run not found
+drl-02-02-dell-1g hlogin error: Error: Couldn't login
+!
+hpc01-1g: missed cmd(s): all commands
+hpc01-1g: End of run not found
+hpc01-1g hlogin error: Error: Couldn't login
+!
+hpc01-arista-uplink: missed cmd(s): all commands
+hpc01-arista-uplink: End of run not found
+hpc01-arista-uplink clogin error: Error: Couldn't login: hpc01-arista-uplink
+!
+hpc03-10g: missed cmd(s): all commands
+hpc03-10g: End of run not found
+hpc03-10g clogin error: Error: Couldn't login: hpc03-10g
+!
+hpc01-10g: missed cmd(s): all commands
+hpc01-10g: End of run not found
+hpc01-10g clogin error: Error: Check your passwd for hpc01-10g
+!
+hpc03-1g: missed cmd(s): all commands
+hpc03-1g: End of run not found
+hpc03-1g hlogin error: Error: Couldn't login
+!
+hpc04-10g: missed cmd(s): all commands
+hpc04-10g: End of run not found
+hpc04-10g clogin error: Error: Check your passwd for hpc04-10g
+!
+hpc-qumulo-1g: missed cmd(s): all commands
+hpc-qumulo-1g: End of run not found
+hpc-qumulo-1g hlogin error: Error: Couldn't login
+!
+hpc04-40g-a1: missed cmd(s): all commands
+hpc04-40g-a1: End of run not found
+hpc04-40g-a1 clogin error: Error: Check your passwd for hpc04-40g-a1
+!
+hpc05-1g: missed cmd(s): all commands
+hpc05-1g: End of run not found
+hpc05-1g hlogin error: Error: Couldn't login
+!
+hpc05-10g: missed cmd(s): all commands
+hpc05-10g: End of run not found
+hpc05-10g clogin error: Error: Check your passwd for hpc05-10g
+!
+unknown router manufacturer for hpc08-1g: rancid
+hpc04-40g-a2: missed cmd(s): all commands
+hpc04-40g-a2: End of run not found
+hpc04-40g-a2 clogin error: Error: Check your passwd for hpc04-40g-a2
+!
+hpc09-1g-a: missed cmd(s): all commands
+hpc09-1g-a: End of run not found
+hpc09-1g-a hlogin error: Error: Couldn't login
+!
+hpc07-10g: missed cmd(s): all commands
+hpc07-10g: End of run not found
+hpc07-10g clogin error: Error: Check your passwd for hpc07-10g
+!
+hpc08-10g: missed cmd(s): all commands
+hpc08-10g: End of run not found
+hpc08-10g clogin error: Error: Check your passwd for hpc08-10g
+!
+hpc09-1g-b: missed cmd(s): all commands
+hpc09-1g-b: End of run not found
+hpc09-1g-b hlogin error: Error: Couldn't login
+!
+s3048-on-1: missed cmd(s): all commands
+s3048-on-1: End of run not found
+s3048-on-1 clogin error: Error: Couldn't login: s3048-on-1
+!
+s3048-on-2: missed cmd(s): all commands
+s3048-on-2: End of run not found
+s3048-on-2 clogin error: Error: Couldn't login: s3048-on-2
+!
+hpc10-10g: missed cmd(s): all commands
+hpc10-10g: End of run not found
+hpc10-10g clogin error: Error: Check your passwd for hpc10-10g
+!
+s3048-on-3: missed cmd(s): all commands
+s3048-on-3: End of run not found
+s3048-on-3 clogin error: Error: Couldn't login: s3048-on-3
+!
+hpc06-10g: missed cmd(s): all commands
+hpc06-10g: End of run not found
+hpc06-10g clogin error: Error: Couldn't login: hpc06-10g
+!
+s3048-on-4: missed cmd(s): all commands
+s3048-on-4: End of run not found
+s3048-on-4 clogin error: Error: Couldn't login: s3048-on-4
+!
+s3048-on-5: missed cmd(s): all commands
+s3048-on-5: End of run not found
+s3048-on-5 clogin error: Error: Couldn't login: s3048-on-5
+!
+hpc09-10g: missed cmd(s): all commands
+hpc09-10g: End of run not found
+hpc09-10g clogin error: Error: Couldn't login: hpc09-10g
+!
+s5048f-on-3: missed cmd(s): all commands
+s5048f-on-3: End of run not found
+s5048f-on-3 clogin error: Error: Couldn't login: s5048f-on-3
+!
+s5048f-on-4: missed cmd(s): all commands
+s5048f-on-4: End of run not found
+s5048f-on-4 clogin error: Error: Couldn't login: s5048f-on-4
+!
+s5048f-on-5: missed cmd(s): all commands
+s5048f-on-5: End of run not found
+s5048f-on-5 clogin error: Error: Couldn't login: s5048f-on-5
+!
+s5048f-on-6: missed cmd(s): all commands
+s5048f-on-6: End of run not found
+s5048f-on-6 clogin error: Error: Couldn't login: s5048f-on-6
+!
+=====================================
+Getting missed routers: round 4.
+drl-02-01-dell-1g: missed cmd(s): all commands
+drl-02-01-dell-1g: End of run not found
+drl-02-01-dell-1g hlogin error: Error: Couldn't login
+!
+drl-02-01-viper: missed cmd(s): all commands
+drl-02-01-viper: End of run not found
+drl-02-01-viper clogin error: Error: Couldn't login: drl-02-01-viper
+dl-02-02-10g-raptor: missed cmd(s): all commands
+dl-02-02-10g-raptor: End of run not found
+dl-02-02-10g-raptor clogin error: Error: Couldn't login: dl-02-02-10g-raptor
+!
+!
+drl-02-02-dell-1g: missed cmd(s): all commands
+drl-02-02-dell-1g: End of run not found
+drl-02-02-dell-1g hlogin error: Error: Couldn't login
+!
+hpc01-1g: missed cmd(s): all commands
+hpc01-1g: End of run not found
+hpc01-1g hlogin error: Error: Couldn't login
+!
+hpc01-arista-uplink: missed cmd(s): all commands
+hpc01-arista-uplink: End of run not found
+hpc01-arista-uplink clogin error: Error: Couldn't login: hpc01-arista-uplink
+!
+hpc03-10g: missed cmd(s): all commands
+hpc03-10g: End of run not found
+hpc03-10g clogin error: Error: Couldn't login: hpc03-10g
+!
+hpc01-10g: missed cmd(s): all commands
+hpc01-10g: End of run not found
+hpc01-10g clogin error: Error: Check your passwd for hpc01-10g
+!
+hpc03-1g: missed cmd(s): all commands
+hpc03-1g: End of run not found
+hpc03-1g hlogin error: Error: Couldn't login
+!
+hpc04-10g: missed cmd(s): all commands
+hpc04-10g: End of run not found
+hpc04-10g clogin error: Error: Check your passwd for hpc04-10g
+!
+hpc-qumulo-1g: missed cmd(s): all commands
+hpc-qumulo-1g: End of run not found
+hpc-qumulo-1g hlogin error: Error: Couldn't login
+!
+hpc05-1g: missed cmd(s): all commands
+hpc05-1g: End of run not found
+hpc05-1g hlogin error: Error: Couldn't login
+!
+hpc05-10g: missed cmd(s): all commands
+hpc05-10g: End of run not found
+hpc05-10g clogin error: Error: Check your passwd for hpc05-10g
+!
+hpc04-40g-a2: missed cmd(s): all commands
+hpc04-40g-a2: End of run not found
+hpc04-40g-a2 clogin error: Error: Check your passwd for hpc04-40g-a2
+!
+unknown router manufacturer for hpc08-1g: rancid
+hpc07-10g: missed cmd(s): all commands
+hpc07-10g: End of run not found
+hpc07-10g clogin error: Error: Check your passwd for hpc07-10g
+!
+hpc08-10g: missed cmd(s): all commands
+hpc08-10g: End of run not found
+hpc08-10g clogin error: Error: Check your passwd for hpc08-10g
+!
+hpc04-40g-a1: missed cmd(s): all commands
+hpc04-40g-a1: End of run not found
+hpc04-40g-a1 clogin error: Error: Couldn't login: hpc04-40g-a1
+!
+hpc09-1g-a: missed cmd(s): all commands
+hpc09-1g-a: End of run not found
+hpc09-1g-a hlogin error: Error: Couldn't login
+!
+hpc09-1g-b: missed cmd(s): all commands
+hpc09-1g-b: End of run not found
+hpc09-1g-b hlogin error: Error: Couldn't login
+!
+s3048-on-1: missed cmd(s): all commands
+s3048-on-1: End of run not found
+s3048-on-1 clogin error: Error: Couldn't login: s3048-on-1
+!
+hpc06-10g: missed cmd(s): all commands
+hpc06-10g: End of run not found
+hpc06-10g clogin error: Error: Couldn't login: hpc06-10g
+!
+s3048-on-2: missed cmd(s): all commands
+s3048-on-2: End of run not found
+s3048-on-2 clogin error: Error: Couldn't login: s3048-on-2
+!
+s3048-on-3: missed cmd(s): all commands
+s3048-on-3: End of run not found
+s3048-on-3 clogin error: Error: Couldn't login: s3048-on-3
+hpc09-10g: missed cmd(s): all commands
+hpc09-10g: End of run not found
+hpc09-10g clogin error: Error: Couldn't login: hpc09-10g
+!
+!
+s3048-on-4: missed cmd(s): all commands
+s3048-on-4: End of run not found
+s3048-on-4 clogin error: Error: Couldn't login: s3048-on-4
+!
+hpc10-10g: missed cmd(s): all commands
+hpc10-10g: End of run not found
+hpc10-10g clogin error: Error: Check your passwd for hpc10-10g
+!
+s3048-on-5: missed cmd(s): all commands
+s3048-on-5: End of run not found
+s3048-on-5 clogin error: Error: Couldn't login: s3048-on-5
+!
+s5048f-on-3: missed cmd(s): all commands
+s5048f-on-3: End of run not found
+s5048f-on-3 clogin error: Error: Couldn't login: s5048f-on-3
+!
+s5048f-on-4: missed cmd(s): all commands
+s5048f-on-4: End of run not found
+s5048f-on-4 clogin error: Error: Couldn't login: s5048f-on-4
+!
+s5048f-on-5: missed cmd(s): all commands
+s5048f-on-5: End of run not found
+s5048f-on-5 clogin error: Error: Couldn't login: s5048f-on-5
+!
+s5048f-on-6: missed cmd(s): all commands
+s5048f-on-6: End of run not found
+s5048f-on-6 clogin error: Error: Couldn't login: s5048f-on-6
+!
+
+[master e75bee6] updates
+ 5 files changed, 10 insertions(+)
+remote: Repository not found.
+fatal: Authentication failed for 'https://github.com/kevweiss/rancid.git/'

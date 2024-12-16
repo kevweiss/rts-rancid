@@ -1,0 +1,9 @@
+starting: Mon Dec 9 11:38:40 AM EST 2024
+
+
+fatal: this operation must be run in a work tree
+fatal: this operation must be run in a work tree
+remote: Write access to repository not granted.
+fatal: unable to access 'https://github.com/kevweiss/rancid.git/': The requested URL returned error: 403
+
+ending: Mon Dec 9 11:39:09 AM EST 2024

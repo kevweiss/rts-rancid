@@ -1,0 +1,19 @@
+0000000000000000000000000000000000000000 2b4d015400582bd6492e1aafd26612fe0b4f63e6 Kevin Weiss <kevin.weiss1@email.gwu.edu> 1733757056 -0500	commit (initial): Initial commit with all groups in a single repository
+2b4d015400582bd6492e1aafd26612fe0b4f63e6 57638dcb923b467deee3c0aa3a270ce0596b94ce Kevin Weiss <kevin.weiss1@email.gwu.edu> 1733757279 -0500	commit: Updated drl-02-02-dell-1g configuration
+57638dcb923b467deee3c0aa3a270ce0596b94ce ddc8deaa3e71569aac94d6e579293099e7f8a55c Kevin Weiss <kevin.weiss1@email.gwu.edu> 1733757432 -0500	commit: Added log files
+ddc8deaa3e71569aac94d6e579293099e7f8a55c 99861528b9145a12630997086a31b3116322cc50 Kevin Weiss <kevin.weiss1@email.gwu.edu> 1733757476 -0500	commit: Added .gitignore to exclude backups
+99861528b9145a12630997086a31b3116322cc50 af909dab7c05ed8c1a93d63801b0fc1bd8712ed8 Kevin Weiss <kevin.weiss1@email.gwu.edu> 1733757929 -0500	commit: Update configurations from rancid-run
+af909dab7c05ed8c1a93d63801b0fc1bd8712ed8 c553197347fc0f2874d9ac6167a388f85edf76b0 Kevin Weiss <kevin.weiss1@email.gwu.edu> 1733758351 -0500	pull origin master --rebase (start): checkout c553197347fc0f2874d9ac6167a388f85edf76b0
+c553197347fc0f2874d9ac6167a388f85edf76b0 40a59c2a659ae22b7cd22f06ae100e14f4513ffd Kevin Weiss <kevin.weiss1@email.gwu.edu> 1733758351 -0500	pull origin master --rebase (pick): Initial commit with all groups in a single repository
+40a59c2a659ae22b7cd22f06ae100e14f4513ffd e0145c8965d967b004a8eb50deefbab07a5df577 Kevin Weiss <kevin.weiss1@email.gwu.edu> 1733758351 -0500	pull origin master --rebase (pick): Updated drl-02-02-dell-1g configuration
+e0145c8965d967b004a8eb50deefbab07a5df577 7c024036af99733e253bca87f8cec21e2c7ff2d6 Kevin Weiss <kevin.weiss1@email.gwu.edu> 1733758351 -0500	pull origin master --rebase (pick): Added log files
+7c024036af99733e253bca87f8cec21e2c7ff2d6 6a35cb9dcb3473bb8c520d447c27ebf87edab1c0 Kevin Weiss <kevin.weiss1@email.gwu.edu> 1733759014 -0500	rebase (continue): Added .gitignore to exclude backups
+6a35cb9dcb3473bb8c520d447c27ebf87edab1c0 3adc9a2506295cd6a7e07b9ee6bcc467f2e0078a Kevin Weiss <kevin.weiss1@email.gwu.edu> 1733759045 -0500	rebase (pick): Update configurations from rancid-run
+3adc9a2506295cd6a7e07b9ee6bcc467f2e0078a 3adc9a2506295cd6a7e07b9ee6bcc467f2e0078a Kevin Weiss <kevin.weiss1@email.gwu.edu> 1733759045 -0500	rebase (finish): returning to refs/heads/master
+3adc9a2506295cd6a7e07b9ee6bcc467f2e0078a 3adc9a2506295cd6a7e07b9ee6bcc467f2e0078a Kevin Weiss <kevin.weiss1@email.gwu.edu> 1733759062 -0500	checkout: moving from master to master
+3adc9a2506295cd6a7e07b9ee6bcc467f2e0078a 3adc9a2506295cd6a7e07b9ee6bcc467f2e0078a Kevin Weiss <kevin.weiss1@email.gwu.edu> 1733759367 -0500	checkout: moving from master to master
+3adc9a2506295cd6a7e07b9ee6bcc467f2e0078a 3adc9a2506295cd6a7e07b9ee6bcc467f2e0078a Kevin Weiss <kevin.weiss1@email.gwu.edu> 1733759385 -0500	checkout: moving from master to main
+3adc9a2506295cd6a7e07b9ee6bcc467f2e0078a 2da9b07dd9d3afd1eff547e889cd97cd19f96696 kevweiss <kevin.weiss1@email.gwu.edu> 1733763927 -0500	commit: test hpc05-10g change
+2da9b07dd9d3afd1eff547e889cd97cd19f96696 2da9b07dd9d3afd1eff547e889cd97cd19f96696 kevweiss <kevin.weiss1@email.gwu.edu> 1733765398 -0500	checkout: moving from main to kweiss-branch
+2da9b07dd9d3afd1eff547e889cd97cd19f96696 7241444ae9837c4b25039fc08e41932ebdc16f45 kevweiss <kevin.weiss1@email.gwu.edu> 1733765900 -0500	push
+7241444ae9837c4b25039fc08e41932ebdc16f45 f2f1e9197a87d81a0a47e2d2cddcab305df7c67a kevweiss <kevin.weiss1@email.gwu.edu> 1734371756 -0500	commit: updates

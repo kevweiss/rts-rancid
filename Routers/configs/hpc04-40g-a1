@@ -1,0 +1,288 @@
+!RANCID-CONTENT-TYPE: arista
+!
+!Model: FSOS Software, S8050, Version 7.4.9.r4
+!Model: Copyright (C) 2009-2022 FS.COM Inc.  All Rights Reserved.
+!Model: The current running image is flash:/boot/FSOS-S8050-20Q4C-v7.4.9.r4.r.bin
+!Model: Hardware Type is 20Q4C
+!Model: Hardware Version is 3.0
+!Model: SDRAM size 1024M
+!Model: Flash size 2048M
+!Model: EPLD Version is 3.2
+!Model: BootRom Version is 8.1.9
+!Model: System serial number is CG170812002209N019
+!Model: Current Web Version is 7.4.3.r
+!
+!                       ^
+!
+!Flash: Directory of flash:/  
+!Flash: total 10256
+!Flash: -rw-r--r-- 1 8867338 Jan  7  2000 FSOS-webImage-v7.4.3.r.bin
+!Flash: drwxr-xr-x 2     736 Jul 29 23:33 boot
+!Flash: drwxr-xr-x 7     760 Sep  1  2017 cold
+!Flash: drwxr-xr-x 3     296 Sep  1  2017 conf
+!Flash: -rw------- 1     147 Nov 10 19:41 dhcpsnooping
+!Flash: -rw------- 1     151 Nov 10 19:41 dhcpv6snooping
+!Flash: drwxr-xr-x 2     224 Jan  1  2000 info
+!Flash: drwxr-xr-x 2     288 Sep  1  2017 log
+!Flash: drwxr-x--- 2     256 May 14  2000 mirror
+!Flash: drwxr-xr-x 3     224 Sep  1  2017 monitor
+!Flash: -rw-r----- 1    4321 Nov 10 19:41 startup-config.conf
+!Flash: -rw-r--r-- 1 1614797 Dec 28 22:12 syslog
+!Flash: drwxr-xr-x 2    7648 Dec  5 22:32 syslogfile
+!Flash: 887M bytes total (863M bytes free) 
+!
+!
+!BootExtension:                        ^
+!Extensions:
+!                    ^
+!*****************************
+!*** unsaved changes exist ***
+!*****************************
+!                ^
+!% Invalid input detected at '^' marker.
+!
+Building configuration...
+version 7.4.9.r4
+!
+!
+no service password-encryption
+!
+http server load flash:/FSOS-webImage-v7.4.3.r.bin
+service http enable
+!
+!
+!
+!
+hostname HPC04-40G-A1
+!
+!enable password <removed>
+!
+!
+!username admin privilege 4 password <removed>
+!username rts-admin password <removed>
+!
+!
+!
+management ip address 192.168.1.1/24
+!
+!
+!
+!
+!
+!
+port-channel 1 lacp-mode dynamic
+ipv6 enable
+!
+snmp-server enable 
+snmp-server community rts-network read-only 
+snmp-server version v2c
+snmp-server trap target-address 192.168.192.250 community rts-network 
+snmp-server trap target-address 192.168.192.249 community rts-network 
+!
+vlan database
+ vlan 730,740,772-774,786,787,789,792,799,4041,4044
+ vlan 730 name RTS-network
+ vlan 740 name License-Management
+ vlan 772 name RTS-network
+ vlan 773 name C1
+ vlan 774 name Pegasus
+ vlan 786 name Cerberus
+ vlan 787 name Raptor
+ vlan 789 name Starlight
+ vlan 792 name Viper
+ vlan 799 name iscsi
+ vlan 4041 name IDRAC-C1
+ vlan 4044 name Peer-Link
+!
+spanning-tree enable
+spanning-tree e-stp enable
+!
+
+interface eth-0-1
+ description HPC09-10G-UPLINK
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ channel-group 5 mode active
+!
+interface eth-0-2
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ channel-group 6 mode active
+!
+interface eth-0-3
+ description HPC08-10-UPLINK
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ channel-group 3 mode active
+!
+interface eth-0-4
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ channel-group 8 mode active
+!
+interface eth-0-5
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ channel-group 9 mode active
+!
+interface eth-0-6
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ channel-group 10 mode active
+!
+interface eth-0-7
+ description HPC04-10G-UPLINK
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ channel-group 7 mode active
+!
+interface eth-0-8
+!
+interface eth-0-9
+ description HPC03-10G-UPLINK 
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ channel-group 20 mode active
+!
+interface eth-0-10
+!
+interface eth-0-11
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ channel-group 55 mode active
+!
+interface eth-0-12
+ description UPLINK
+ fec enable
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ channel-group 1 mode active
+!
+interface eth-0-13
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ channel-group 55 mode active
+!
+interface eth-0-14
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ channel-group 55 mode active
+!
+interface eth-0-15
+!
+interface eth-0-16
+ description Gracehoppers-1
+ switchport mode trunk
+ switchport trunk allowed vlan all
+!
+interface eth-0-17
+ description Gracehoppers-2
+ switchport mode trunk
+ switchport trunk allowed vlan all
+!
+interface eth-0-18
+ switchport access vlan 773
+!
+interface eth-0-19
+!
+interface eth-0-20
+!
+interface eth-0-21
+!
+interface eth-0-22
+!
+interface eth-0-23
+!
+interface eth-0-24
+!
+interface agg1
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ mlag 1
+!
+interface agg3
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ mlag 3
+!
+interface agg5
+ description description HPC09-10G
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ mlag 5
+!
+interface agg6
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ mlag 6
+!
+interface agg7
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ mlag 7
+!
+interface agg8
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ mlag 8
+!
+interface agg9
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ mlag 9
+!
+interface agg10
+ switchport mode trunk
+ switchport trunk allowed vlan all
+!
+interface agg20
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ mlag 20
+!
+interface agg55
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ spanning-tree port disable
+!
+interface vlan1
+ ip address dhcp
+!
+interface vlan730
+ ip address 192.168.192.77/24
+!
+interface vlan740
+ mtu 9216
+!
+interface vlan799
+ mtu 9216
+ ipv6 nd other-config-flag
+ no ipv6 nd ra suppress
+!
+interface vlan4044
+ ip address 172.172.172.171/24
+!
+interface null0
+!
+mlag configuration
+ peer-link agg55
+ peer-address 172.172.172.172
+ exit
+!
+monitor destination forwarding enable
+!
+lldp enable
+!
+!
+!
+line con 0
+ no line-password
+ no login
+line vty 0 7
+ exec-timeout 35791 0
+ privilege level 4
+ no line-password
+ login local
+!
+!
+end

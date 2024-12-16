@@ -1,0 +1,16 @@
+starting: Mon Dec 9 10:18:50 AM EST 2024
+
+
+fatal: this operation must be run in a work tree
+fatal: this operation must be run in a work tree
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+ending: Mon Dec 9 10:18:50 AM EST 2024

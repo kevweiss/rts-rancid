@@ -1,0 +1,414 @@
+!RANCID-CONTENT-TYPE: arista
+!
+!Model: Arista DCS-7020SR-24C2-R
+!Hardware version: 11.02
+!Serial number: JPE22260091
+!System MAC address: c4ca.2beb.94bb
+!Software image version: 4.23.0F
+!Architecture: i686
+!Internal build version: 4.23.0F-13614065.4230F
+!Internal build ID: 158ef907-fbb0-49af-950b-a2a8e86f3d07
+!Total memory: 8104344 kB
+!
+!Software image: flash:EOS-4.23.0F.swi
+!Console speed: (not set)
+!Aboot password (encrypted): (not set)
+!Memory test iterations: (not set)
+!
+!
+!
+!Flash: Directory of flash:/
+!Flash:        -rw-        1848            Aug 8  2023  AsuFastPktTransmit.log
+!Flash:        -rw-   864254888           Aug 18  2022  EOS-4.23.0F.swi
+!Flash:        drwx        4096           Aug 18  2022  Fossil
+!Flash:        -rw-        1136            Aug 8  2023  SsuRestore.log
+!Flash:        -rw-        1136            Aug 8  2023  SsuRestoreLegacy.log
+!Flash:        -rw-          26           Aug 18  2022  boot-config
+!Flash:        drwx        4096            Aug 8  2023  debug
+!Flash:        drwx        4096           Aug 18  2022  fastpkttx.backup
+!Flash:        drwx       16384           Aug 18  2022  lost+found
+!Flash:        drwx        4096           Aug 18  2022  schedule
+!Flash:        -rw-        5815           Nov 14 11:35  startup-config
+!Flash:        -rw-           0           Feb 21  2023  zerotouch-config
+!
+!System information
+!  Model                    Description                                          
+!  ------------------------ ---------------------------------------------------- 
+!  DCS-7020SR-24C2          24xSFP+ & 2xQSFP100 Switch                           
+!  HW Version  Serial Number  Mfg Date   Epoch 
+!  ----------- -------------- ---------- ----- 
+!  11.02       JPE22260091    2020-01-01 01.00 
+!System has 2 power supply slots
+!  Slot Model            Serial Number    
+!  ---- ---------------- ---------------- 
+!  1    PWR-500AC-R      DDRT0C76WMP      
+!  2    PWR-500AC-R      DDRT0C76WNB      
+!System has 3 fan modules
+!  Module  Number of Fans  Model            Serial Number    
+!  ------- --------------- ---------------- ---------------- 
+!  1       1               FAN-7000-R       N/A              
+!  2       1               FAN-7000-R       N/A              
+!  3       1               FAN-7000-R       N/A              
+!System has 33 ports
+!  Type               Count
+!  ------------------ ----
+!  Management         1   
+!  Switched           28  
+!  SwitchedBootstrap  4   
+!System has 26 transceiver slots
+!  Port Manufacturer     Model            Serial Number    Rev 
+!  ---- ---------------- ---------------- ---------------- ----
+!  1    Not Present                                            
+!  2    Arista Networks  SFP-10G-SR       XMD1332D31V2     0002
+!  3    Arista Networks  CAB-SFP-SFP-2M   XDY220903MWF     20  
+!  4    Arista Networks  CAB-SFP-SFP-2M   XDY220903MPF     20  
+!  5    Not Present                                            
+!  6    FINISAR CORP.    FTLX8574D3BCL    N5EA3VL          A   
+!  7    Intel Corp       FTLX8574D3BCV-IT UX11NPK          A   
+!  8    FINISAR CORP.    FTLX8574D3BCL    N5EA3TE          A   
+!  9    FINISAR CORP.    FTLX8574D3BCL    N5DDNCA          A   
+!  10   FINISAR CORP.    FTLX8574D3BCL    N5EA94U          A   
+!  11   FINISAR CORP.    FTLX8574D3BCL    N5EA3DN          A   
+!  12   FS               SFP-10GLR-31     S2117353968      A   
+!  13   FS               SFP-10GLR-31     G2130687355          
+!  14   FINISAR CORP.    FTLX8574D3BCL    N5EA422          A   
+!  15   CISCO-MOLEX      74752-9093       MOC1910A4EG      09  
+!  16   FINISAR CORP.    FTLX8574D3BCL    N5EA3W4          A   
+!  17   FS               SFP-10GLR-31     G2130687356          
+!  18   FINISAR CORP.    FTLX8571D3BCL-J1 ARL35RU          A   
+!  19   FS               SFP-10GLR-31     S2117353963      A   
+!  20   FS               SFP-10GLR-31     S2117353965      A   
+!  21   FINISAR CORP.    FTLX8571D3BCL    APC2FV2          A   
+!  22   FS               SFP-10GLR-31     S2117353967      A   
+!  23   Arista Networks  CAB-SFP-SFP-2M   XDY220903MU9     20  
+!  24   Arista Networks  CAB-SFP-SFP-2M   XDY220803LAL     20  
+!  25   Arista Networks  QSFP28-IR4-100G  G2210026311      01  
+!  26   Arista Networks  QSFP28-IR4-100G  G2210026312      01  
+!System has 1 storage device
+!  Mount      Type Model          Serial Number Rev Size (GB) 
+!  ---------- ---- -------------- ------------- --- --------- 
+!  /mnt/flash eMMC Toshiba 008G70 348dcfc4      0.0 4         
+!
+!
+!Extensions:
+!! No extensions are available
+!
+!*****************************
+!*** unsaved changes exist ***
+!*****************************
+!--- flash:/startup-config
+!+++ system:/running-config
+!@@ -227,7 +227,7 @@
+! !
+! interface Vlan3
+!    ipv6 enable
+!-   ipv6 address auto-config
+!+   ipv6 address 2606:69c0:9120:7843:ffff::1255/64
+! !
+! interface Vlan65
+!    mtu 10178
+!
+! Command: show running-config
+! device: HPC01-Arista-7020SR-UPLINK (DCS-7020SR-24C2, EOS-4.23.0F)
+!
+! boot system flash:EOS-4.23.0F.swi
+!
+transceiver qsfp default-mode 4x10G
+!
+logging host 161.253.199.145
+logging host 192.168.192.115
+logging host 2606:69c0:9120:782c:20c:29ff:fe0b:8d46
+!
+hostname HPC01-Arista-7020SR-UPLINK
+!
+snmp-server community rts-network ro
+snmp-server host 192.168.192.249 version 2c version
+snmp-server host 192.168.192.250 version 2c version
+!
+spanning-tree mode rstp
+!
+service unsupported-transceiver GWU 8a564f79
+!
+!enable password <removed>
+no aaa root
+!
+username admin privilege 15 role network-admin secret sha512 $6$s2hjhWmzPZWEstWb$cb6qt/YQdt9jvRSIpF7l.K6WE.q1f5han2TkM4hGhZZ/WuTBTZfz3PkC1wb.d/oautQjSXKVCZvUcJmQ4GRI11
+username rts-admin privilege 15 secret sha512 $6$ChKy00C5r9wHn9l0$K1gvdFWiwgsfzVjZZuWrbnWANegkfy9OeJLNLPiLkmCYzotEgB0A1fGM2bEwFgru1wFConNnnT/rpisLcMgmY0
+username shash privilege 15 secret sha512 $6$Y2v1m4BKKUGLBpNH$nAVJV7APukpfl4smQD2IQv1p9fHGk6kKm/jaUAzudBy1OSGVDGEBJrb8CK8I/hxuzDcRaCtJXU6/Q0ZLjV3H90
+!
+clock timezone US/Eastern
+!
+vlan 2
+   name Pegasus-IPMI
+!
+vlan 3
+   name DL_IPMI
+!
+vlan 730
+   name Network
+!
+vlan 740
+   name License_Management
+!
+vlan 772
+   name storage
+!
+vlan 773
+   name campus
+!
+vlan 774
+   name Pegasus-Login
+!
+vlan 776
+   name Pegasus-IPv6
+!
+vlan 786
+   name Cerberus
+!
+vlan 787
+   name Raptor
+!
+vlan 789
+   name starfish
+!
+vlan 792
+   name Viper
+!
+vlan 799
+   name Dacian-Test
+!
+vlan 3041
+   name compellent-direct
+!
+vlan 4041
+   name hpc-management-ipmi
+!
+vlan 4045
+   name hpc-switches
+!
+vlan 4050
+   name ib-vpi
+!
+interface Port-Channel1
+   mtu 10178
+   no switchport
+!
+interface Port-Channel2
+   description Aritsa-Rack1-3650-uplink
+   switchport mode trunk
+!
+interface Port-Channel100
+   switchport mode trunk
+!
+interface Port-Channel600
+   switchport mode trunk
+!
+interface Ethernet1
+   mtu 10178
+!
+interface Ethernet2
+   description Arista-UPLINK_MAIN
+   mtu 10178
+   switchport trunk allowed vlan 50,65,773,3041,4041,4045,4050
+   switchport mode trunk
+!
+interface Ethernet3
+   mtu 10178
+   channel-group 100 mode active
+!
+interface Ethernet4
+   mtu 10178
+   channel-group 100 mode active
+!
+interface Ethernet5
+   description Cerberus
+   mtu 10178
+   switchport access vlan 772
+!
+interface Ethernet6
+   description login01.cerberus.arc.gwu.edu
+   mtu 10178
+   switchport access vlan 773
+!
+interface Ethernet7
+   description login02.cerberus.arc.gwu.edu
+   mtu 10178
+   switchport access vlan 773
+!
+interface Ethernet8
+   mtu 10178
+   switchport access vlan 772
+!
+interface Ethernet9
+   mtu 10178
+   switchport access vlan 772
+!
+interface Ethernet10
+   description master02.cerberus.arc.gwu.edu
+   mtu 9216
+   switchport access vlan 773
+!
+interface Ethernet11
+   description truenas.cerberus.arc.gwu.edu
+   mtu 10178
+   switchport access vlan 773
+!
+interface Ethernet12
+   description UPLINK-HPC03-10G
+   mtu 10178
+   switchport mode trunk
+!
+interface Ethernet13
+   description starfish-uplink
+   mtu 9216
+   switchport access vlan 789
+   switchport trunk allowed vlan 3,730,787,789,792
+   switchport mode trunk
+   spanning-tree bpdufilter enable
+!
+interface Ethernet14
+   description ESXI
+   mtu 10178
+   switchport access vlan 772
+   switchport mode trunk
+!
+interface Ethernet15
+   mtu 10178
+   switchport mode trunk
+!
+interface Ethernet16
+   description TOR-HPC4-switch01
+   mtu 10178
+   switchport mode trunk
+!
+interface Ethernet17
+   description master01.cerberus.arc.gwu.edu
+   mtu 9216
+   switchport access vlan 773
+!
+interface Ethernet18
+   description TOR-HPC10
+   mtu 10178
+   switchport mode trunk
+!
+interface Ethernet19
+   mtu 10178
+   switchport mode trunk
+!
+interface Ethernet20
+   description UPLINK-B1-02-13
+   mtu 10178
+   switchport access vlan 773
+   switchport mode trunk
+!
+interface Ethernet21
+   description TOR-HPC09
+   mtu 10178
+   switchport mode trunk
+!
+interface Ethernet22
+   description HPC-B1-TOP-Raptor
+   mtu 10178
+   switchport access vlan 772
+   switchport mode trunk
+!
+interface Ethernet23
+   description Cisco-Rack1-Uplink
+   mtu 10178
+   channel-group 2 mode active
+!
+interface Ethernet24
+   description Cisco-Rack1-Uplink
+   mtu 10178
+   channel-group 2 mode active
+!
+interface Ethernet25/1
+   switchport mode trunk
+   channel-group 600 mode active
+!
+interface Ethernet26/1
+   switchport mode trunk
+   channel-group 600 mode active
+!
+interface Management1
+!
+interface Vlan2
+   description PEGASUS_IPMI
+   mtu 9216
+!
+interface Vlan3
+   ipv6 enable
+   ipv6 address 2606:69c0:9120:7843:ffff::1255/64
+!
+interface Vlan65
+   mtu 10178
+!
+interface Vlan730
+   ip address 192.168.192.100/24
+   ipv6 enable
+!
+interface Vlan740
+   mtu 7216
+   ipv6 enable
+   ipv6 address auto-config
+!
+interface Vlan772
+   mtu 9216
+   ipv6 enable
+   ipv6 address auto-config
+!
+interface Vlan773
+   mtu 9216
+   ip address 161.253.199.80/25
+   ipv6 enable
+   ipv6 address auto-config
+!
+interface Vlan774
+   mtu 9216
+   ipv6 enable
+   ipv6 address auto-config
+!
+interface Vlan776
+   description Pegasus-IPv6
+   mtu 9216
+   ipv6 enable
+   ipv6 address auto-config
+!
+interface Vlan786
+   ipv6 enable
+   ipv6 address auto-config
+!
+interface Vlan787
+   ipv6 enable
+   ipv6 address auto-config
+!
+interface Vlan789
+   description Starfish
+   mtu 9216
+   ipv6 enable
+   ipv6 address auto-config
+   ipv6 nd managed-config-flag
+!
+interface Vlan3041
+   description compellent-direct
+!
+interface Vlan4041
+   mtu 9216
+   ip address 172.20.193.254/23
+   ipv6 address auto-config
+!
+interface Vlan4045
+   description hpc-switches
+   mtu 9216
+   ip address 172.20.251.25/24
+!
+interface Vlan4050
+   description ib-vpi
+!
+ip route 0.0.0.0/0 161.253.199.126
+!
+no ip routing
+!
+ip ssh client local-interface Ethernet1
+!
+end

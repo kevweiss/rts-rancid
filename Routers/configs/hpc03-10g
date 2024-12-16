@@ -1,0 +1,384 @@
+!RANCID-CONTENT-TYPE: arista
+!
+!Model: Arista DCS-7020SR-24C2-R
+!Hardware version: 11.02
+!Serial number: JPE22260034
+!System MAC address: c4ca.2beb.9be7
+!Software image version: 4.23.0F
+!Architecture: i686
+!Internal build version: 4.23.0F-13614065.4230F
+!Internal build ID: 158ef907-fbb0-49af-950b-a2a8e86f3d07
+!Total memory: 8104344 kB
+!
+!Software image: flash:EOS-4.23.0F.swi
+!Console speed: (not set)
+!Aboot password (encrypted): (not set)
+!Memory test iterations: (not set)
+!
+!
+!
+!Flash: Directory of flash:/
+!Flash:        -rw-        2772           Aug 29 14:52  AsuFastPktTransmit.log
+!Flash:        -rw-   864254888            Jul 1  2022  EOS-4.23.0F.swi
+!Flash:        drwx        4096           Jul 18  2023  Fossil
+!Flash:        -rw-        1704           Aug 29 14:52  SsuRestore.log
+!Flash:        -rw-        1704           Aug 29 14:52  SsuRestoreLegacy.log
+!Flash:        -rw-          26            Jul 1  2022  boot-config
+!Flash:        drwx        4096           Aug 29 14:54  debug
+!Flash:        -rw-           0           Sep 13  2023  enable3px
+!Flash:        drwx        4096            Jul 1  2022  fastpkttx.backup
+!Flash:        drwx       16384            Jul 1  2022  lost+found
+!Flash:        drwx        4096            Jul 1  2022  schedule
+!Flash:        -rw-        6040            Dec 4 20:01  startup-config
+!Flash:        -rw-        5708           Jul 25 14:08  wr
+!Flash:        -rw-           0           Jul 18  2023  zerotouch-config
+!
+!System information
+!  Model                    Description                                          
+!  ------------------------ ---------------------------------------------------- 
+!  DCS-7020SR-24C2          24xSFP+ & 2xQSFP100 Switch                           
+!  HW Version  Serial Number  Mfg Date   Epoch 
+!  ----------- -------------- ---------- ----- 
+!  11.02       JPE22260034    2020-01-01 01.00 
+!System has 2 power supply slots
+!  Slot Model            Serial Number    
+!  ---- ---------------- ---------------- 
+!  1    PWR-500AC-R      L8183Q0046AWP    
+!  2    PWR-500AC-R      L8183P008SAWP    
+!System has 3 fan modules
+!  Module  Number of Fans  Model            Serial Number    
+!  ------- --------------- ---------------- ---------------- 
+!  1       1               FAN-7000-R       N/A              
+!  2       1               FAN-7000-R       N/A              
+!  3       1               FAN-7000-R       N/A              
+!System has 33 ports
+!  Type               Count
+!  ------------------ ----
+!  Management         1   
+!  Switched           28  
+!  SwitchedBootstrap  4   
+!System has 26 transceiver slots
+!  Port Manufacturer     Model            Serial Number    Rev 
+!  ---- ---------------- ---------------- ---------------- ----
+!  1    FS               SFP-10GLR-31     S2117353960      A   
+!  2    Arista Networks  CAB-SFP-SFP-2M   XDY220903MRA     20  
+!  3    Amphenol         616740002        CN05CWK687Q5018  C   
+!  4    Amphenol         616740002        MX05CWK697C10LC  C   
+!  5    Amphenol         616740002        MX05CWK697C10JQ  C   
+!  6    Amphenol         616740002        CN05CWK687Q5020  C   
+!  7    Amphenol         616740002        CN05CWK688G6JPG  C   
+!  8    Amphenol         616740002        CN05CWK688G6L5G  C   
+!  9    Amphenol         616740002        CN05CWK688G6KTA  C   
+!  10   Amphenol         616740002        CN05CWK688G6KBV  C   
+!  11   Amphenol         616740002        CN05CWK688G6KU4  C   
+!  12   Amphenol         616740002        CN05CWK688G6KPL  C   
+!  13   Amphenol         616740002        CN05CWK688G6JP9  C   
+!  14   CISCO-TYCO       1-2053783-2      TED1704B6MA      R   
+!  15   CISCO-LOROM      LRHSPB54D030     LRM211281Z1      B2  
+!  16   CISCO-LOROM      LRHSPB54D030     LRM2114R13U      B2  
+!  17   CISCO-LOROM      LRHSPB54D030     LRM211281WZ      B2  
+!  18   CISCO-LOROM      LRHSPB54D030     LRM2114R0YZ      B2  
+!  19   CISCO-LOROM      LRHSPB54D030     LRM2114R0YD      B2  
+!  20   CISCO-LOROM      LRHSPB54D030     LRM211281RR      B2  
+!  21   CISCO-LOROM      LRHSPB54D030     LRM211281NZ      B2  
+!  22   CISCO-LOROM      LRHSPB54D030     LRM211482K0      B2  
+!  23   Amphenol         616740002        CN05CWK688I6RM4  C   
+!  24   CISCO-TYCO       1-2053783-2      TED1742B7TA      R   
+!  25   Fiberstore       QSFP-LR4-40G     F1712002886      01  
+!  26   Fiberstore       QSFP-LR4-40G     F1712002888      01  
+!System has 1 storage device
+!  Mount      Type Model          Serial Number Rev Size (GB) 
+!  ---------- ---- -------------- ------------- --- --------- 
+!  /mnt/flash eMMC Toshiba 008G70 34add1ca      0.0 4         
+!
+!
+!Extensions:
+!! No extensions are available
+!
+! Command: show running-config
+! device: HPC03-10G (DCS-7020SR-24C2, EOS-4.23.0F)
+!
+! boot system flash:EOS-4.23.0F.swi
+!
+transceiver qsfp default-mode 4x10G
+!
+logging host 161.253.199.145
+logging host 2606:69c0:9120:782c:20c:29ff:fe0b:8d46
+!
+hostname HPC03-10G
+!
+snmp-server community rts-network ro
+snmp-server host 192.168.192.249 version 2c rts-network
+snmp-server host 192.168.192.250 version 2c rts-networ
+snmp-server host 192.168.192.250 version 2c rts-network
+snmp-server enable traps
+!
+spanning-tree mode rstp
+!
+service unsupported-transceiver EMC 677096c7
+!
+!enable password <removed>
+no aaa root
+!
+username admin privilege 15 role network-admin secret sha512 $6$gdwuS9wA2GflAOeS$38TM.vZtgPYE7pMt1mYHOBJ2.DVtNefbgObFu4Khrapn6ZWAHnBIWCceU1Lqplt3p8EvQkX01d1ndOC1ERaCr.
+username admin ssh-key ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDY6YOf4Jjm8VygCgQwzkMrfBBl04PBvCZKbQR31ZESvfxg55F1d4g3cxHvMMaylJ+au1+inqQsB0JZwNzvhrPLHwGL21K2jLKIyJB2vuHA4W7mVQBRBcw1V+7+Ifwlvp8TvBZwrq3pkGyE+Voy6GfnJ9AH61cKuWDPsyshh1m1wq/cdWskBUnFqOULdLsvqa/5RHnhBYXftU7In3uPT2802fYowdWJAY25zee21rFcxmPX8lRMBq4meUbZJkf14hKG18WmUHMR2F706g4eVAx8DVWzvPG8LZkaRfP7dV/VacNbKDHi8C3Cr5BxMsDlHrodjFzuJ9U7aI8EJaEeHRUyeU90jhNtRCodBBbS8VfQv+Jic+S7v36/JFgh7Zq4uoBEzeoaxaPCYcIjBeSGGxeNahjgYxkWkyPLGzec4aSxoyK8Yujp5n7eZX62YCoW7UE5B4LOZ3H1Y+CTcrMIU85OQSGhGxkldqfVxwL+EUgCGxsBFWPDGVc1n52um2jGC1k= rancid@rts-rancid
+username rts-admin privilege 15 secret sha512 $6$WXIp77Ms1VXtTZDE$OjlNIlClX3vLmsxfGkYYv6cMChGVVOqEceT5eTyhm9kFHMqT.R1UztmpiWpEBQpKov3KjB5.27taUCZlf6z8U0
+username shash privilege 15 secret sha512 $6$ri/jmJ51Y6BArm9b$PVxLLefoXw.IrlDpjM/saxKpTtzzrUp1h/udptJdcN3PI1a6ql/uhSUcCjZ/o5cF0ZKB13NgMkqmEEyWpFMda.
+!
+vlan 2
+!
+vlan 3
+   name DRL:IPMI
+!
+vlan 730
+   name Network
+!
+vlan 740
+   name License-Management
+!
+vlan 772
+   name storage
+!
+vlan 773
+   name campus
+!
+vlan 774
+   name Pegasus-Login
+!
+vlan 776
+   name Pegasus-IPv6
+!
+vlan 786
+   name Cerberus
+!
+vlan 787
+   name Raptor
+!
+vlan 792
+   name Viper
+!
+vlan 799
+   name Dacian-Test
+!
+vlan 4041
+   name hpc-management-ipmi
+!
+vlan 4045
+   name hpc-switches
+!
+vlan 4050
+   name ib-vpi
+!
+interface Port-Channel3
+   mtu 9216
+   switchport mode trunk
+!
+interface Port-Channel600
+   mtu 9216
+   switchport mode trunk
+   mlag 600
+!
+interface Port-Channel699
+   switchport trunk allowed vlan 773,799
+   switchport mode trunk
+!
+interface Port-Channel700
+   description vdi-node-1
+   mtu 10178
+   switchport mode trunk
+!
+interface Port-Channel702
+   description zfsnas-node-1
+   mtu 10178
+   switchport trunk allowed vlan 773,799
+   switchport mode trunk
+!
+interface Port-Channel703
+   description zfsnas-node-2
+   mtu 10178
+   switchport mode trunk
+!
+interface Port-Channel704
+   description ZFS-1
+   mtu 10178
+   switchport trunk allowed vlan 773,799
+   switchport mode trunk
+!
+interface Port-Channel705
+   description VDI-1
+   mtu 10178
+   switchport trunk allowed vlan 773,799
+   switchport mode trunk
+!
+interface Port-Channel773
+   switchport mode trunk
+!
+interface Ethernet1
+   description HPC01-Arista-7020SR-UPLINK
+   shutdown
+   mtu 10178
+   switchport access vlan 773
+   switchport mode trunk
+!
+interface Ethernet2
+   description irods-servers
+   mtu 9216
+   switchport access vlan 773
+!
+interface Ethernet3
+   switchport mode trunk
+   channel-group 704 mode active
+!
+interface Ethernet4
+   mtu 10178
+   switchport mode trunk
+   channel-group 703 mode active
+!
+interface Ethernet5
+   mtu 10178
+   switchport mode trunk
+   channel-group 705 mode active
+!
+interface Ethernet6
+   mtu 10178
+   channel-group 702 mode active
+!
+interface Ethernet7
+   mtu 9216
+   switchport trunk allowed vlan 773,779
+   switchport mode trunk
+!
+interface Ethernet8
+   mtu 9216
+   switchport trunk allowed vlan 773,779
+   switchport mode trunk
+!
+interface Ethernet9
+   mtu 10178
+   channel-group 702 mode active
+!
+interface Ethernet10
+   mtu 10178
+   switchport mode trunk
+   channel-group 705 mode active
+!
+interface Ethernet11
+   switchport mode trunk
+   channel-group 704 mode active
+!
+interface Ethernet12
+   mtu 10178
+   channel-group 703 mode active
+!
+interface Ethernet13
+   shutdown
+   mtu 9216
+!
+interface Ethernet14
+   mtu 9216
+   switchport mode trunk
+!
+interface Ethernet15
+   description Rubeel-server-4
+   mtu 9216
+   switchport mode trunk
+!
+interface Ethernet16
+   description Rubeel-server-4
+   mtu 10178
+   switchport access vlan 799
+   switchport mode trunk
+!
+interface Ethernet17
+   description Rubeel-server-3
+   mtu 9216
+   switchport mode trunk
+!
+interface Ethernet18
+   description Rubeel-server-3
+   mtu 10178
+   switchport access vlan 799
+   switchport mode trunk
+!
+interface Ethernet19
+   description Rubeel-server-2
+   mtu 9216
+   switchport mode trunk
+!
+interface Ethernet20
+   description Rubeel-server-2
+   mtu 9216
+   switchport access vlan 799
+   switchport mode trunk
+!
+interface Ethernet21
+   description Rubeel-server-1
+   mtu 9216
+   switchport mode trunk
+!
+interface Ethernet22
+   description Rubeel-server-1
+   mtu 9216
+   switchport access vlan 799
+   switchport mode trunk
+!
+interface Ethernet23
+   description ESXI
+   mtu 10178
+   switchport mode trunk
+!
+interface Ethernet24
+   description STORAGE
+   mtu 10178
+   switchport access vlan 799
+!
+interface Ethernet25/1
+   shutdown
+   mtu 9214
+   speed forced 40gfull
+   channel-group 600 mode active
+!
+interface Ethernet26/1
+   mtu 9214
+   speed forced 40gfull
+   channel-group 600 mode active
+!
+interface Management1
+!
+interface Vlan2
+   mtu 9216
+!
+interface Vlan3
+   mtu 9214
+!
+interface Vlan730
+   description Network
+   ip address 192.168.192.94/24
+!
+interface Vlan740
+   mtu 9216
+!
+interface Vlan772
+   mtu 9214
+!
+interface Vlan773
+   mtu 9214
+   ip address 161.253.199.25/25
+   ipv6 enable
+!
+interface Vlan774
+   mtu 9214
+!
+interface Vlan776
+   description pegasus-IPv6
+!
+interface Vlan4041
+!
+interface Vlan4045
+   ip address 172.20.251.201/24
+!
+no ip routing
+!
+ip ssh client local-interface Management1
+!
+end

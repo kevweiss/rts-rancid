@@ -1,0 +1,185 @@
+!RANCID-CONTENT-TYPE: arista
+!
+!Model: FSOS Software, S5850, Version 7.4.3.r5
+!Model: Copyright (C) 2009-2023 FS.COM Inc.  All Rights Reserved.
+!Model: The current running image is flash:/boot/FSOS-S5850-24S2Q-v7.4.3.r5.r.bin
+!Model: Hardware Type is 24S2Q
+!Model: Hardware Version is 3.1
+!Model: SDRAM size 2048M
+!Model: Flash size 8192M
+!Model: BootRom Version is A.2.25
+!Model: System serial number is CG2206232963N00039
+!Model: Current Web Version is 7.4.3.r
+!
+!                    ^
+!
+!Flash: Directory of flash:/  
+!Flash: total 9276
+!Flash: -rw-r--r-- 1    1255 Jan 31  2023 649D990BD64F.1.lic
+!Flash: -rw-r--r-- 1 8867338 Jan 31  2023 FSOS-webImage-v7.4.3.r.bin
+!Flash: drwxr-xr-x 2    4096 May 21  2066 boot
+!Flash: drwsrwsrwt 2    4096 Jan 31  2023 cfg
+!Flash: drwsrwsrwt 5    4096 Jan 31  2023 cold
+!Flash: drwsrwsrwt 3    4096 Jan 31  2023 conf
+!Flash: -rw-r----- 1     147 Dec  8 08:02 dhcpsnooping
+!Flash: -rw-r----- 1     151 Dec  8 08:02 dhcpv6snooping
+!Flash: drwsrwsrwt 2    4096 Feb  3  2066 info
+!Flash: drwsrwsrwt 2    4096 Jan 31  2023 log
+!Flash: drwsrwsrwt 3    4096 Jan 31  2023 monitor
+!Flash: drwsrwsrwt 2    4096 Jan 31  2023 reboot-info
+!Flash: -rw-r----- 1    2016 Dec  8 08:02 startup-config.conf
+!Flash: -rw-r--r-- 1  573362 Dec 15 07:43 syslog
+!Flash: drwsrwsrwt 2    4096 Nov 12 06:57 syslogfile
+!Flash: 3.9G bytes total (3.6G bytes free) 
+!
+!
+!BootExtension:                     ^
+!Extensions:
+!                 ^
+!*****************************
+!*** unsaved changes exist ***
+!*****************************
+!             ^
+!% Invalid input detected at '^' marker.
+!
+Building configuration...
+version 7.4.3.r5
+!
+!
+no service password-encryption
+!
+http server load flash:/FSOS-webImage-v7.4.3.r.bin
+service http enable
+!
+!
+!
+hostname HPC08-10G
+!
+!enable password <removed>
+!
+!
+!username admin privilege 4 password <removed>
+!username rts-admin password <removed>
+!
+!
+!
+!
+management ip address 192.168.1.1/24
+!
+!
+!
+!
+!
+snmp-server enable 
+snmp-server community rts-network read-only 
+snmp-server version v2c
+snmp-server trap target-address 192.168.192.250 community rts-network 
+snmp-server trap target-address 192.168.192.249 community rts-network 
+!
+vlan database
+ vlan 730,772-774,786,787,789,792,799,4041
+ vlan 730 name RTS-network
+ vlan 772 name RTS-network
+ vlan 773 name C1
+ vlan 774 name Pegasus
+ vlan 786 name Cerberus
+ vlan 787 name Raptor
+ vlan 789 name Starlight
+ vlan 792 name Viper
+ vlan 799 name iscsi
+ vlan 4041 name IDRAC-C1
+!
+spanning-tree enable
+!
+
+interface eth-0-1
+ description NEW RANCID TEST
+!
+interface eth-0-2
+!
+interface eth-0-3
+!
+interface eth-0-4
+!
+interface eth-0-5
+!
+interface eth-0-6
+!
+interface eth-0-7
+!
+interface eth-0-8
+!
+interface eth-0-9
+!
+interface eth-0-10
+!
+interface eth-0-11
+!
+interface eth-0-12
+!
+interface eth-0-13
+!
+interface eth-0-14
+!
+interface eth-0-15
+!
+interface eth-0-16
+!
+interface eth-0-17
+!
+interface eth-0-18
+!
+interface eth-0-19
+!
+interface eth-0-20
+!
+interface eth-0-21
+!
+interface eth-0-22
+!
+interface eth-0-23
+!
+interface eth-0-24
+!
+interface eth-0-25
+ description UPLINK
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ channel-group 63 mode active
+!
+interface eth-0-26
+ description UPLINK
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ channel-group 63 mode active
+!
+interface agg63
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ mlag 8
+!
+interface vlan1
+ ip address dhcp
+!
+interface vlan730
+ description Network
+ mtu 9216
+ ip address 192.168.192.88/24
+!
+interface null0
+!
+lldp enable
+!
+!
+!
+line con 0
+ no line-password
+ no login
+line vty 0 7
+ exec-timeout 35791 0
+ privilege level 4
+ no line-password
+ login local
+!
+!
+end

@@ -1,0 +1,10 @@
+starting: Mon Dec 9 11:57:01 AM EST 2024
+
+
+fatal: this operation must be run in a work tree
+fatal: this operation must be run in a work tree
+git: 'credential-manager-core' is not a git command. See 'git --help'.
+git: 'credential-manager-core' is not a git command. See 'git --help'.
+Everything up-to-date
+
+ending: Mon Dec 9 11:57:29 AM EST 2024

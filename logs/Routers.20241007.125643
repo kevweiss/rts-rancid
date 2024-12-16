@@ -1,0 +1,12 @@
+starting: Mon Oct 7 12:56:43 PM EDT 2024
+
+
+On branch master
+Your branch is up to date with 'origin/master'.
+
+nothing to commit, working tree clean
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/kevweiss/rancid.git/'
+
+ending: Mon Oct 7 12:56:52 PM EDT 2024

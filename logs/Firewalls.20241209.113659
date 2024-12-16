@@ -1,0 +1,10 @@
+starting: Mon Dec 9 11:36:59 AM EST 2024
+
+
+fatal: this operation must be run in a work tree
+fatal: this operation must be run in a work tree
+remote: Support for password authentication was removed on August 13, 2021.
+remote: Please see https://docs.github.com/get-started/getting-started-with-git/about-remote-repositories#cloning-with-https-urls for information on currently recommended modes of authentication.
+fatal: Authentication failed for 'https://github.com/kevweiss/rancid.git/'
+
+ending: Mon Dec 9 11:37:08 AM EST 2024

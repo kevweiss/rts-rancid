@@ -1,0 +1,20 @@
+starting: Fri Oct 4 10:42:59 AM EDT 2024
+
+
+[master 83a6604] updates of group Routers
+ 4 files changed, 8 insertions(+)
+ create mode 100644 .gitignore
+ mode change 100755 => 100644 routers.all
+ mode change 100755 => 100644 routers.down
+ mode change 100755 => 100644 routers.up
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+ending: Fri Oct 4 10:42:59 AM EDT 2024
