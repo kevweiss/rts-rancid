@@ -21,7 +21,7 @@
 !
 !Flash: Directory of flash:
 !Flash:   1  drwx       4096   Jan 01 1980 00:00:00 +00:00 .  
-!Flash:   2  drwx       3584   Sep 23 2024 07:46:38 +00:00 ..  
+!Flash:   2  drwx       3584   Sep 23 2024 08:50:21 +00:00 ..  
 !Flash:   3  drwx       4096   Jun 29 2016 11:36:46 +00:00 TRACE_LOG_DIR  
 !Flash:   4  drwx       4096   Jun 29 2016 11:36:48 +00:00 CONFD_LOG_DIR  
 !Flash:   5  drwx       4096   Jun 29 2016 11:36:52 +00:00 CORE_DUMP_DIR  
