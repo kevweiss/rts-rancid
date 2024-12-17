@@ -21,13 +21,13 @@
 !Flash: drwsrwsrwt 2    4096 Jan 31  2023 cfg
 !Flash: drwsrwsrwt 5    4096 Jan 31  2023 cold
 !Flash: drwsrwsrwt 3    4096 Jan 31  2023 conf
-!Flash: -rw-r----- 1     147 Dec  8 08:02 dhcpsnooping
-!Flash: -rw-r----- 1     151 Dec  8 08:02 dhcpv6snooping
+!Flash: -rw-r----- 1     147 Dec 16 10:37 dhcpsnooping
+!Flash: -rw-r----- 1     151 Dec 16 10:37 dhcpv6snooping
 !Flash: drwsrwsrwt 2    4096 Feb  3  2066 info
 !Flash: drwsrwsrwt 2    4096 Jan 31  2023 log
 !Flash: drwsrwsrwt 3    4096 Jan 31  2023 monitor
 !Flash: drwsrwsrwt 2    4096 Jan 31  2023 reboot-info
-!Flash: -rw-r----- 1    2016 Dec  8 08:02 startup-config.conf
+!Flash: -rw-r----- 1    2018 Dec 16 10:37 startup-config.conf
 !Flash: -rw-r--r-- 1  590138 Dec 16 03:39 syslog
 !Flash: drwsrwsrwt 2    4096 Nov 12 06:57 syslogfile
 !Flash: 3.9G bytes total (3.6G bytes free) 
@@ -93,7 +93,7 @@ spanning-tree enable
 !
 
 interface eth-0-1
- description NEW RANCID TEST
+ description FINAL RANCID TEST
 !
 interface eth-0-2
 !
