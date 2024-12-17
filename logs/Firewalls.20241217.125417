@@ -1,0 +1,30 @@
+starting: Tue Dec 17 12:54:17 PM EST 2024
+
+
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../logs/Firewalls.20241216.140917
+	../logs/Firewalls.20241217.113403
+	../logs/Firewalls.20241217.115034
+	../logs/Firewalls.20241217.125417
+	../logs/Routers.20241216.140847
+	../logs/Routers.20241217.113301
+	../logs/Routers.20241217.114929
+	../logs/Routers.20241217.125314
+	../logs/Switches.20241216.140917
+	../logs/Switches.20241217.113403
+	../logs/Switches.20241217.115033
+	../logs/Switches.20241217.125416
+
+nothing added to commit but untracked files present (use "git add" to track)
+To https://github.com/kevweiss/rancid.git
+ ! [rejected]        master -> master (fetch first)
+error: failed to push some refs to 'https://github.com/kevweiss/rancid.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ending: Tue Dec 17 12:54:17 PM EST 2024

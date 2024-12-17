@@ -1,0 +1,167 @@
+starting: Tue Dec 17 11:33:01 AM EST 2024
+
+
+
+Trying to get all of the configs.
+drl-02-01-dell-1g: missed cmd(s): all commands
+drl-02-01-dell-1g: End of run not found
+drl-02-01-dell-1g hlogin error: Error: Couldn't login
+!
+hpc-qumulo-1g: missed cmd(s): all commands
+hpc-qumulo-1g: End of run not found
+hpc-qumulo-1g hlogin error: Error: Couldn't login
+!
+hpc01-1g: missed cmd(s): all commands
+hpc01-1g: End of run not found
+hpc01-1g hlogin error: Error: Couldn't login
+!
+drl-02-01-viper: missed cmd(s): all commands
+drl-02-01-viper: End of run not found
+!
+hpc03-1g: missed cmd(s): all commands
+hpc03-1g: End of run not found
+hpc03-1g hlogin error: Error: Couldn't login
+!
+unknown router manufacturer for hpc08-1g: rancid
+hpc09-10g: missed cmd(s): all commands
+hpc09-10g: End of run not found
+hpc09-10g clogin error: Error: Couldn't login: hpc09-10g
+!
+rts-z9100: missed cmd(s): all commands
+rts-z9100: End of run not found
+rts-z9100 clogin error: Error: Couldn't login: rts-z9100
+!
+=====================================
+Getting missed routers: round 1.
+hpc03-1g: missed cmd(s): all commands
+hpc03-1g: End of run not found
+hpc03-1g hlogin error: Error: Couldn't login
+!
+unknown router manufacturer for hpc08-1g: rancid
+hpc01-1g: missed cmd(s): all commands
+hpc01-1g: End of run not found
+hpc01-1g hlogin error: Error: Couldn't login
+!
+drl-02-01-dell-1g: missed cmd(s): all commands
+drl-02-01-dell-1g: End of run not found
+drl-02-01-dell-1g hlogin error: Error: Couldn't login
+!
+hpc-qumulo-1g: missed cmd(s): all commands
+hpc-qumulo-1g: End of run not found
+hpc-qumulo-1g hlogin error: Error: Couldn't login
+!
+hpc09-10g: missed cmd(s): all commands
+hpc09-10g: End of run not found
+hpc09-10g clogin error: Error: Couldn't login: hpc09-10g
+!
+rts-z9100: missed cmd(s): all commands
+rts-z9100: End of run not found
+rts-z9100 clogin error: Error: Couldn't login: rts-z9100
+!
+drl-02-01-viper: missed cmd(s): all commands
+drl-02-01-viper: End of run not found
+!
+=====================================
+Getting missed routers: round 2.
+hpc-qumulo-1g: missed cmd(s): all commands
+hpc-qumulo-1g: End of run not found
+hpc-qumulo-1g hlogin error: Error: Couldn't login
+!
+hpc03-1g: missed cmd(s): all commands
+hpc03-1g: End of run not found
+hpc03-1g hlogin error: Error: Couldn't login
+unknown router manufacturer for hpc08-1g: rancid
+!
+hpc01-1g: missed cmd(s): all commands
+hpc01-1g: End of run not found
+hpc01-1g hlogin error: Error: Couldn't login
+!
+drl-02-01-dell-1g: missed cmd(s): all commands
+drl-02-01-dell-1g: End of run not found
+drl-02-01-dell-1g hlogin error: Error: Couldn't login
+!
+hpc09-10g: missed cmd(s): all commands
+hpc09-10g: End of run not found
+hpc09-10g clogin error: Error: Couldn't login: hpc09-10g
+!
+rts-z9100: missed cmd(s): all commands
+rts-z9100: End of run not found
+rts-z9100 clogin error: Error: Couldn't login: rts-z9100
+!
+drl-02-01-viper: missed cmd(s): all commands
+drl-02-01-viper: End of run not found
+!
+=====================================
+Getting missed routers: round 3.
+drl-02-01-dell-1g: missed cmd(s): all commands
+drl-02-01-dell-1g: End of run not found
+drl-02-01-dell-1g hlogin error: Error: Couldn't login
+!
+hpc01-1g: missed cmd(s): all commands
+hpc01-1g: End of run not found
+hpc01-1g hlogin error: Error: Couldn't login
+!
+hpc03-1g: missed cmd(s): all commands
+hpc03-1g: End of run not found
+hpc03-1g hlogin error: Error: Couldn't login
+!
+unknown router manufacturer for hpc08-1g: rancid
+hpc-qumulo-1g: missed cmd(s): all commands
+hpc-qumulo-1g: End of run not found
+hpc-qumulo-1g hlogin error: Error: Couldn't login
+!
+hpc09-10g: missed cmd(s): all commands
+hpc09-10g: End of run not found
+hpc09-10g clogin error: Error: Couldn't login: hpc09-10g
+rts-z9100: missed cmd(s): all commands
+rts-z9100: End of run not found
+rts-z9100 clogin error: Error: Couldn't login: rts-z9100
+!
+!
+drl-02-01-viper: missed cmd(s): all commands
+drl-02-01-viper: End of run not found
+!
+=====================================
+Getting missed routers: round 4.
+hpc01-1g: missed cmd(s): all commands
+hpc01-1g: End of run not found
+hpc01-1g hlogin error: Error: Couldn't login
+!
+hpc03-1g: missed cmd(s): all commands
+hpc03-1g: End of run not found
+hpc03-1g hlogin error: Error: Couldn't login
+!
+unknown router manufacturer for hpc08-1g: rancid
+drl-02-01-dell-1g: missed cmd(s): all commands
+drl-02-01-dell-1g: End of run not found
+drl-02-01-dell-1g hlogin error: Error: Couldn't login
+!
+hpc-qumulo-1g: missed cmd(s): all commands
+hpc-qumulo-1g: End of run not found
+hpc-qumulo-1g hlogin error: Error: Couldn't login
+!
+rts-z9100: missed cmd(s): all commands
+rts-z9100: End of run not found
+rts-z9100 clogin error: Error: Couldn't login: rts-z9100
+hpc09-10g: missed cmd(s): all commands
+hpc09-10g: End of run not found
+hpc09-10g clogin error: Error: Couldn't login: hpc09-10g
+!
+!
+drl-02-01-viper: missed cmd(s): all commands
+drl-02-01-viper: End of run not found
+!
+
+[master 2a2801a] updates
+ 26 files changed, 9880 insertions(+), 20 deletions(-)
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+ending: Tue Dec 17 11:34:03 AM EST 2024

@@ -1,0 +1,25 @@
+starting: Tue Dec 17 11:34:03 AM EST 2024
+
+
+On branch master
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	../logs/Firewalls.20241216.140917
+	../logs/Firewalls.20241217.113403
+	../logs/Routers.20241216.140847
+	../logs/Routers.20241217.113301
+	../logs/Switches.20241216.140917
+	../logs/Switches.20241217.113403
+
+nothing added to commit but untracked files present (use "git add" to track)
+fatal: No configured push destination.
+Either specify the URL from the command-line or configure a remote repository using
+
+    git remote add <name> <url>
+
+and then push using the remote name
+
+    git push <name>
+
+
+ending: Tue Dec 17 11:34:03 AM EST 2024
