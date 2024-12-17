@@ -15,7 +15,7 @@
 !                       ^
 !
 !Flash: Directory of flash:/  
-!Flash: total 10708
+!Flash: total 10712
 !Flash: -rw-r--r-- 1 8867338 Jan  6  2000 FSOS-webImage-v7.4.3.r.bin
 !Flash: drwxr-xr-x 2     736 Jul 29 23:08 boot
 !Flash: drwxr-xr-x 7     760 Sep  2  2017 cold
@@ -27,7 +27,7 @@
 !Flash: drwxr-xr-x 2     288 Sep  2  2017 log
 !Flash: drwxr-xr-x 3     224 Sep  2  2017 monitor
 !Flash: -rw-r----- 1    4768 Nov 10 19:44 startup-config.conf
-!Flash: -rw-r--r-- 1 1723319 Dec 25 04:12 syslog
+!Flash: -rw-r--r-- 1 1728101 Dec 29 06:07 syslog
 !Flash: drwxr-xr-x 2    3232 Aug 10 11:20 syslogfile
 !Flash: 887M bytes total (870M bytes free) 
 !

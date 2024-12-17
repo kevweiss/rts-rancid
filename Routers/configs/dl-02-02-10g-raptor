@@ -1,0 +1,444 @@
+!RANCID-CONTENT-TYPE: arista
+!
+!Model: Arista DCS-7148S-R
+!Hardware version: 03.02
+!Serial number: JSH09511116
+!System MAC address: 001c.7304.6d07
+!Software image version: 4.13.0F
+!Architecture: i386
+!Internal build version: 4.13.0F-1561201.4130F
+!Internal build ID: 17b739a4-ca27-4244-8fac-67bc897a31a8
+!Total memory: 2033828 kB
+!
+!Software image: flash:/EOS-4.13.0F.swi
+!Console speed: (not set)
+!Aboot password (encrypted): (not set)
+!Memory test iterations: (not set)
+!
+!
+!System temperature status is: Ok
+!System cooling status is: Ok
+!Airflow: back-to-front
+!
+!Flash: Directory of flash:/
+!Flash:        -rwx   447351539           Apr 13  2015  EOS-4.13.0F.swi
+!Flash:        -rwx   188621783           Apr 13  2010  EOS-4.4.0.swi
+!Flash:        -rwx          27           Apr 13  2015  boot-config
+!Flash:        drwx        4096           Apr 13  2015  debug
+!Flash:        -rwx           0           Apr 13  2015  enable3px
+!Flash:        drwx        4096           Apr 13  2015  schedule
+!Flash:        -rwx        6113           Dec 17 16:25  startup-config
+!Flash:        -rwx        5167            Mar 8  2013  startup-config-orig
+!
+!System information
+!  Model                    Description                                         
+!  ------------------------ ----------------------------------------------------
+!  DCS-7148S                48-port SFP+ 10GigE 1RU                             
+!  HW Version  Serial Number  Mfg Date  
+!  ----------- -------------- ----------
+!  03.02       JSH09511116    2009-12-21
+!System has 2 power supply slots
+!  Slot Model            Serial Number   
+!  ---- ---------------- ----------------
+!  1    PWR-760AC        I080FE000R1YZ   
+!  2    PWR-760AC        I080FD004Z1YZ   
+!System has 5 fan modules
+!  Module  Number of Fans  Model            Serial Number   
+!  ------- --------------- ---------------- ----------------
+!  1       1               FAN-7100-R       JSH09510279     
+!  2       1               FAN-7100-R       JSH09501966     
+!  3       1               FAN-7100-R       JSH09490118     
+!  4       1               FAN-7100-R       JSH09480128     
+!  5       1               FAN-7100-R       JSH09490187     
+!System has 50 ports
+!  Type             Count
+!  ---------------- ----
+!  Management       2   
+!  Switched         48  
+!System has 48 transceiver slots
+!  Port Manufacturer     Model            Serial Number    Rev 
+!  ---- ---------------- ---------------- ---------------- ----
+!  1    FINISAR CORP.    FTLX8571D3BCL    UG204PS          A   
+!  2    FS               SFP-10GLR-31     G2140112387      A   
+!  3    CISCO-MOLEX      74752-9742       MOC2051A2JH      09  
+!  4    Molex Inc.       74752-1201       709241390            
+!  5    Molex Inc.       74752-1201       709241226            
+!  6    Arista Networks  CAB-SFP-SFP-2M   XDY220903M3D     20  
+!  7    Amphenol         616740002        CN05CWK687Q501Q  C   
+!  8    Amphenol         616740002        CN05CWK688G6L1C  C   
+!  9    Amphenol         616740002        CN05CWK688G6KR2  C   
+!  10   Molex Inc.       74752-1201       709241365            
+!  11   CISCO-MOLEX      74752-9520       MOC16240C5H      09  
+!  12   Not Present                                            
+!  13   Not Present                                            
+!  14   Not Present                                            
+!  15   Not Present                                            
+!  16   Arista Networks  CAB-SFP-SFP-2M   XDY220903MQ9     20  
+!  17   Amphenol         616740003        CN053HVN8420W06  C   
+!  18   Amphenol         616740003        CN053HVN8420W70  C   
+!  19   Not Present                                            
+!  20   Not Present                                            
+!  21   Not Present                                            
+!  22   Not Present                                            
+!  23   Not Present                                            
+!  24   Not Present                                            
+!  25   CISCO-TYCO       2053783-3        TED1422C3F2      K   
+!  26   Arista Networks  CAB-SFP-SFP-2M   XDY220803LCK     20  
+!  27   CISCO-TYCO       1-2053783-6      TED1643HQFH      R   
+!  28   CISCO-MOLEX      74752-9521       MOC160904PJ      08  
+!  29   Not Present                                            
+!  30   Not Present                                            
+!  31   Not Present                                            
+!  32   Not Present                                            
+!  33   Not Present                                            
+!  34   Not Present                                            
+!  35   Not Present                                            
+!  36   Not Present                                            
+!  37   Not Present                                            
+!  38   Not Present                                            
+!  39   Not Present                                            
+!  40   Not Present                                            
+!  41   Not Present                                            
+!  42   Not Present                                            
+!  43   Not Present                                            
+!  44   Not Present                                            
+!  45   Not Present                                            
+!  46   Not Present                                            
+!  47   Amphenol         616740000        CN0C6Y7M3CQ53UY  B   
+!  48   Not Present                                            
+!
+! Command: show running-config
+! device: DL-02-02-10G-Raptor (DCS-7148S, EOS-4.13.0F)
+!
+! boot system flash:/EOS-4.13.0F.swi
+!
+transceiver qsfp default-mode 4x10G
+!
+logging host 161.253.199.145
+!
+hostname DL-02-02-10G-Raptor
+!
+snmp-server contact "Con
+snmp-server community rts-network ro
+snmp-server host 192.168.192.249 version 2c rts-network
+snmp-server host 192.168.192.250 version 2c rts-network
+snmp-server host 192.168.192.250 version 2c version2c
+!
+spanning-tree mode mstp
+!
+enable secret 5 $1$sQJhaCZV$H6Mc.rOnWSMqDanYUbarn1
+no aaa root
+!
+username admin privilege 15 role network-admin secret 5 $1$jXPwLX2G$xZX.xVNSipuoBs9DgmbA40
+username rts-admin privilege 15 role network-admin secret 5 $1$kNtWoRoO$RtXBt.3Vl0IS/kash.QCu.
+username shash privilege 15 secret 5 $1$0I/fYzhq$IyWUcHW0k8XDkfafZmIqm/
+!
+vlan 3
+   name ipmi
+!
+vlan 25,50,65
+!
+vlan 730
+   name Network
+!
+vlan 786
+   name Cerberus
+!
+vlan 787
+   name Raptor
+!
+vlan 792
+   name Viper
+!
+vlan 800
+   name CAAREN
+!
+interface Port-Channel1
+   switchport mode trunk
+!
+interface Port-Channel2
+   switchport mode trunk
+!
+interface Port-Channel3
+   switchport mode trunk
+!
+interface Port-Channel4
+   switchport mode trunk
+!
+interface Ethernet1
+   description master-01.viper.arc.gwu.edu
+   mtu 9214
+   flowcontrol receive on
+   switchport access vlan 773
+   channel-group 1 mode active
+!
+interface Ethernet2
+   mtu 9214
+   flowcontrol receive on
+   channel-group 1 mode active
+!
+interface Ethernet3
+   mtu 9214
+   flowcontrol receive on
+   switchport access vlan 787
+!
+interface Ethernet4
+   mtu 9214
+   flowcontrol receive on
+   switchport access vlan 787
+!
+interface Ethernet5
+   mtu 9214
+   flowcontrol receive on
+   switchport access vlan 787
+   switchport trunk native vlan 773
+!
+interface Ethernet6
+   mtu 9214
+   flowcontrol receive on
+   switchport access vlan 787
+!
+interface Ethernet7
+   mtu 9214
+   flowcontrol receive on
+   switchport access vlan 787
+!
+interface Ethernet8
+   mtu 9214
+   flowcontrol receive on
+   switchport access vlan 787
+!
+interface Ethernet9
+   mtu 9214
+   flowcontrol receive on
+   switchport access vlan 787
+   switchport trunk native vlan 773
+!
+interface Ethernet10
+   mtu 9214
+   flowcontrol receive on
+   switchport access vlan 787
+   switchport trunk native vlan 773
+!
+interface Ethernet11
+   description viper-login01.arc.gwu.edu
+   mtu 9214
+   flowcontrol receive on
+   switchport access vlan 787
+   switchport trunk native vlan 773
+!
+interface Ethernet12
+   mtu 9214
+   flowcontrol receive on
+   switchport access vlan 787
+   switchport trunk native vlan 773
+!
+interface Ethernet13
+   description viper-login02.arc.gwu.edu
+   mtu 9214
+   flowcontrol receive on
+   switchport access vlan 787
+   switchport trunk native vlan 773
+!
+interface Ethernet14
+   description master-02.viper.arc.gwu.edu
+   mtu 9214
+   flowcontrol receive on
+   switchport access vlan 787
+   switchport trunk native vlan 773
+!
+interface Ethernet15
+   mtu 9214
+   flowcontrol receive on
+   switchport access vlan 787
+!
+interface Ethernet16
+   mtu 9214
+   flowcontrol receive on
+   switchport access vlan 787
+!
+interface Ethernet17
+   mtu 9214
+   flowcontrol receive on
+   switchport access vlan 787
+!
+interface Ethernet18
+   mtu 9214
+   flowcontrol receive on
+   switchport access vlan 787
+!
+interface Ethernet19
+   mtu 9214
+   flowcontrol receive on
+   switchport access vlan 787
+!
+interface Ethernet20
+   mtu 9214
+   flowcontrol receive on
+   switchport access vlan 787
+!
+interface Ethernet21
+   mtu 9214
+   switchport access vlan 787
+!
+interface Ethernet22
+   description Viper-cpu006
+   mtu 9214
+   switchport access vlan 787
+!
+interface Ethernet23
+   mtu 9214
+   switchport access vlan 787
+!
+interface Ethernet24
+   mtu 9214
+   switchport access vlan 787
+!
+interface Ethernet25
+   mtu 9214
+   switchport access vlan 800
+!
+interface Ethernet26
+   mtu 9214
+   switchport access vlan 800
+!
+interface Ethernet27
+   mtu 9214
+   switchport access vlan 800
+!
+interface Ethernet28
+   mtu 9214
+   switchport access vlan 800
+!
+interface Ethernet29
+   mtu 9214
+   switchport access vlan 800
+!
+interface Ethernet30
+   mtu 9214
+   switchport access vlan 800
+!
+interface Ethernet31
+   mtu 9214
+   switchport access vlan 787
+!
+interface Ethernet32
+   mtu 9214
+   switchport access vlan 787
+!
+interface Ethernet33
+   mtu 9214
+   switchport access vlan 787
+!
+interface Ethernet34
+   mtu 9214
+   switchport access vlan 787
+!
+interface Ethernet35
+   mtu 9214
+   switchport access vlan 787
+!
+interface Ethernet36
+   mtu 9214
+   switchport access vlan 787
+!
+interface Ethernet37
+   mtu 9214
+   switchport access vlan 787
+!
+interface Ethernet38
+   description viscog-svr-HPC03
+   mtu 9214
+   switchport access vlan 787
+!
+interface Ethernet39
+   mtu 9214
+   switchport access vlan 787
+!
+interface Ethernet40
+   mtu 9214
+   switchport access vlan 787
+!
+interface Ethernet41
+!
+interface Ethernet42
+   channel-group 3 mode active
+!
+interface Ethernet43
+   channel-group 3 mode active
+!
+interface Ethernet44
+!
+interface Ethernet45
+   switchport access vlan 774
+!
+interface Ethernet46
+   no switchport
+!
+interface Ethernet47
+   switchport mode trunk
+   no switchport
+   channel-group 4 mode active
+!
+interface Ethernet48
+   channel-group 1 mode active
+!
+interface Management1
+!
+interface Management2
+!
+interface Vlan1
+!
+interface Vlan3
+   ipv6 enable
+!
+interface Vlan65
+!
+interface Vlan730
+   description Network
+   mtu 9214
+   ip address 192.168.192.69/24
+!
+interface Vlan772
+!
+interface Vlan773
+   ip address 161.253.199.81/25
+!
+interface Vlan774
+   mtu 9214
+!
+interface Vlan776
+   description Pegasus-IPv6
+!
+interface Vlan787
+   ipv6 enable
+   ipv6 address 2606:69c0:9120:7863::5/64
+!
+interface Vlan792
+   ipv6 enable
+!
+interface Vlan800
+!
+interface Vlan3041
+!
+interface Vlan4041
+   ip address 172.20.193.113/23
+!
+interface Vlan4045
+   ip address 172.20.251.110/24
+!
+interface Vlan4050
+!
+no ip routing
+!
+ip ssh client source-interface Vlan730
+!
+management ssh
+   cipher aes128-cbc aes256-cbc
+   key-exchange diffie-hellman-group-exchange-sha1
+   mac hmac-sha1 hmac-md5
+   hostkey server rsa dsa
+   log-level verbose
+!
+!
+end

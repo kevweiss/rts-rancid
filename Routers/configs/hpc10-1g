@@ -1,2 +1,613 @@
 !RANCID-CONTENT-TYPE: arista
 !
+!Model: Dell Real Time Operating System Software
+!Dell Operating System Version: 2.0
+!Dell Application Software Version: 9.10(0.1P5)
+!Model: Copyright (c) 1999-2016 by Dell Inc. All Rights Reserved.
+!Build Time: Tue Jun 28 05:55:05 2016
+!Build Path: /sites/eqx/work/swbuild01_1/build12/E9-10-0/SW/SRC
+!Model: System image file is "system://A"
+!System Type: S3148 
+!Control Processor: Broadcom 56340 (ver A0) with 2 Gbytes (2147483648 bytes) of memory, core(s) 1.
+!Model: 1G bytes of boot flash memory.
+!Model:   1 52-port GE/TE (S3100)
+!Model:  48 GigabitEthernet/IEEE 802.3 interface(s)
+!Model:   2 Ten GigabitEthernet/IEEE 802.3 interface(s)
+!
+!              ^
+!% Error: Invalid input at "^" marker.
+!
+!
+!
+!Flash: Directory of flash:
+!Flash:   1  drwx       4096   Jan 01 1980 00:00:00 +00:00 .  
+!Flash:   2  drwx       3584   Sep 23 2024 07:30:09 +00:00 ..  
+!Flash:   3  drwx       4096   Jun 29 2016 11:36:46 +00:00 TRACE_LOG_DIR  
+!Flash:   4  drwx       4096   Jun 29 2016 11:36:48 +00:00 CONFD_LOG_DIR  
+!Flash:   5  drwx       4096   Jun 29 2016 11:36:52 +00:00 CORE_DUMP_DIR  
+!Flash:   6  d---       4096   Jun 29 2016 11:36:58 +00:00 ADMIN_DIR  
+!Flash:   7  drwx       4096   Jun 29 2016 11:37:04 +00:00 RUNTIME_PATCH_DIR  
+!Flash:   8  drwx       4096   Jun 29 2016 11:38:38 +00:00 pkg  
+!Flash:   9  drwx       4096   Feb 18 2020 05:07:10 +00:00 CONFIG_TEMPLATE  
+!Flash:  10  -rwx      26572   Sep 23 2024 04:55:34 +00:00 L2PM-HA-Debug.txt  
+!Flash:  11  -rwx          0   Feb 23 2017 21:48:02 +00:00 LACP-HA-Debug.txt  
+!Flash:  12  -rwx          0   Feb 23 2017 21:48:08 +00:00 STP-HA-Debug.txt  
+!Flash:  13  -rwx        592   May 14 2023 07:24:30 +00:00 l2mDbgLog.txt  
+!Flash:  14  -rwx       8849   Jul 03 2024 08:21:34 +00:00 startup-config  
+!Flash:  15  -rwx       8274   Jun 21 2023 10:28:12 +00:00 startup-config.bak  
+!
+!System Type            : S3148      
+!System Mode            : 1.0       
+!Software Version       : 9.10(0.1P5)
+!Unit Type                  Serial Number  Part Number  Rev  Piece Part ID            Rev  Svc Tag  Exprs Svc Code
+!-----------------------------------------------------------------------------------------------------------------
+!* 1  S3148-01-FE-52        NA             0464N6       A01  TW-0464N6-28298-695-0071 A01  1F67Y42  309 422 347 4 
+!  1  S3148-PWR-AC          NA             0H2MKC       A00  TW-0H2MKC-28298-695-0071 A00  NA       NA            
+!  1  S3100-FAN                                              N/A                      N/A  N/A      N/A           
+! * - Management Unit 
+!Software Protocol Configured 
+!--------------------------------------------------------------
+!  LLDP 
+!  SNMP 
+!  Spanning-Tree 
+!
+!
+!BootExtension:               ^
+!BootExtension: % Error: Invalid input at "^" marker.
+!
+!Extensions:
+!              ^
+!% Error: Invalid input at "^" marker.
+!
+!*****************************
+!*** unsaved changes exist ***
+!*****************************
+!         ^
+!% Error: Invalid input at "^" marker.
+!
+Current Configuration ...
+! Version 9.10(0.1P5)
+! Last configuration change at Wed Aug  7 04:46:42 2024 by admin
+! Startup-config last updated at Wed Jul  3 08:21:35 2024 by admin
+!
+boot system stack-unit 1 primary system://A
+boot system stack-unit 1 secondary system://B
+!
+no logging console
+!
+hostname HPC10-1G
+!
+protocol lldp 
+!
+redundancy auto-synchronize full
+!
+!enable password <removed>
+!
+!username admin password <removed>
+!username rts-admin password <removed>
+!
+stack-unit 1 provision S3148
+!
+interface GigabitEthernet 1/1
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/2
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/3
+ description Glen-Cerberus Cluster
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/4
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/5
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/6
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/7
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/8
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/9
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/10
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/11
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/12
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/13
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/14
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/15
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/16
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/17
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/18
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/19
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/20
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/21
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/22
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/23
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/24
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/25
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/26
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/27
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/28
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/29
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/30
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/31
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/32
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/33
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/34
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/35
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/36
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/37
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/38
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/39
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/40
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/41
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/42
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/43
+ description glc-2
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/44
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/45
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/46
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/47
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface GigabitEthernet 1/48
+ no ip address
+ mtu 12000
+ switchport
+ speed 1000
+ no shutdown
+!
+interface TenGigabitEthernet 1/49
+ no ip address
+ mtu 12000
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface TenGigabitEthernet 1/50
+ no ip address
+ shutdown
+!
+interface TenGigabitEthernet 1/51
+ no ip address
+ shutdown
+!
+interface TenGigabitEthernet 1/52
+ no ip address
+ shutdown
+!
+interface ManagementEthernet 1/1
+ no ip address
+ no shutdown
+!
+interface ManagementEthernet 2/1
+ no shutdown
+!
+interface ManagementEthernet 3/1
+ no shutdown
+!
+interface ManagementEthernet 4/1
+ no shutdown
+!
+interface ManagementEthernet 5/1
+ no shutdown
+!
+interface ManagementEthernet 6/1
+ no shutdown
+!
+interface ManagementEthernet 7/1
+ no shutdown
+!
+interface ManagementEthernet 8/1
+ no shutdown
+!
+interface ManagementEthernet 9/1
+ no shutdown
+!
+interface ManagementEthernet 10/1
+ no shutdown
+!
+interface ManagementEthernet 11/1
+ no shutdown
+!
+interface ManagementEthernet 12/1
+ no shutdown
+!
+interface Vlan 1
+!
+interface Vlan 444
+ name osgCluster
+ no ip address
+ tagged TenGigabitEthernet 1/49
+ untagged GigabitEthernet 1/7,1/11
+ shutdown
+!
+interface Vlan 730
+ description Network
+ ip address 192.168.192.85/24
+ mtu 12000
+ tagged TenGigabitEthernet 1/49
+ no shutdown
+!
+interface Vlan 772
+ description Storage
+ no ip address
+ mtu 12000
+ tagged TenGigabitEthernet 1/49
+ untagged GigabitEthernet 1/43
+ no shutdown
+!
+interface Vlan 773
+ name campus
+ no ip address
+ tagged TenGigabitEthernet 1/49
+ untagged GigabitEthernet 1/1
+ shutdown
+!
+interface Vlan 774
+ description Pegasus-Login
+ no ip address
+ mtu 12000
+ tagged TenGigabitEthernet 1/49
+ no shutdown
+!
+interface Vlan 786
+ description Cerberus
+ no ip address
+ mtu 12000
+ tagged TenGigabitEthernet 1/49
+ untagged GigabitEthernet 1/3,1/5,1/9,1/13,1/15-1/16,1/21,1/23,1/25-1/29,1/31,1/33,1/35,1/45-1/48
+ no shutdown
+!
+interface Vlan 787
+ description RAPTOR
+ no ip address
+ mtu 12000
+ tagged TenGigabitEthernet 1/49
+ untagged GigabitEthernet 1/14,1/17-1/20,1/22
+ no shutdown
+!
+interface Vlan 792
+ description Viper
+ no ip address
+ mtu 12000
+ tagged TenGigabitEthernet 1/49
+ no shutdown
+!
+interface Vlan 799
+ description Dacian-Test
+ no ip address
+ mtu 12000
+ tagged TenGigabitEthernet 1/49
+ no shutdown
+!
+interface Vlan 4041
+ name hpc-management
+ no ip address
+ tagged TenGigabitEthernet 1/49
+ untagged GigabitEthernet 1/2,1/4,1/6,1/8,1/10,1/12,1/24,1/30,1/32,1/34,1/36-1/42,1/44
+ no shutdown
+!
+interface Vlan 4044
+ name VLAN4099
+ no ip address
+ shutdown
+!
+interface Vlan 4045
+ name hpc-switches
+ ip address 172.20.251.21/24
+ tagged TenGigabitEthernet 1/49
+ no shutdown
+!
+logging 161.253.199.145
+logging 2606:69c0:9120:782c:20c:29ff:fe0b:8d46
+!
+snmp-server community rts-network ro 
+snmp-server enable traps bgp
+snmp-server enable traps snmp authentication coldstart linkdown linkup syslog-reachable syslog-unreachable
+snmp-server enable traps vrrp
+snmp-server enable traps lacp
+snmp-server enable traps entity
+snmp-server enable traps stack
+snmp-server enable traps stp
+snmp-server enable traps ecfm
+snmp-server enable traps vlt
+snmp-server enable traps xstp
+snmp-server enable traps isis
+snmp-server enable traps config
+snmp-server enable traps envmon cam-utilization fan supply temperature
+snmp-server enable traps ecmp
+snmp-server host 192.168.192.249 traps version 2c rts-network udp-port 162
+snmp-server host 192.168.192.250 traps version 2c rts-network udp-port 162
+!
+ip ssh server enable
+!
+support-assist
+ enable all
+!
+line console 0
+line vty 0
+line vty 1
+line vty 2
+line vty 3
+line vty 4
+line vty 5
+line vty 6
+line vty 7
+line vty 8
+line vty 9
+!
+reload-type
+ boot-type normal-reload
+ config-scr-download enable
+!
+end

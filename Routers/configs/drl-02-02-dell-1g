@@ -5,7 +5,7 @@
 ! FSOS Software, S5800, Version 7.4.6
 ! Copyright (C) 2009-2023 FS.COM Inc.  All Rights Reserved.
 ! The current running image is flash:/boot/FSOS-S5800-48T4S-v7.4.6.r.bin
-! DRL-02-02-Raptor-1G uptime is 123 days, 0 hours, 55 minutes
+! DRL-02-02-Raptor-1G uptime is 123 days, 22 hours, 19 minutes
 ! Hardware Type is 48T4S
 ! Hardware Version is 3.1
 ! SDRAM size 2048M
@@ -21,21 +21,21 @@
 !
 ! # dir
 ! Directory of flash:/  
-! total 11204
+! total 11220
 ! -rw-r--r-- 1     1312 Aug 14  2023 649D990D33E3.1.lic
 ! -rw-r--r-- 1 10596165 Aug 14  2023 FSOS-webImage-v7.4.6.r.bin
 ! drwxr-xr-x 2     4096 Jan  1 01:01 boot
 ! drwsrwsrwt 2     4096 Aug  6  2023 cfg
 ! drwsrwsrwt 5     4096 Aug  6  2023 cold
 ! drwsrwsrwt 3     4096 Aug  6  2023 conf
-! -rw-r----- 1      147 Apr  1 23:38 dhcpsnooping
-! -rw-r----- 1      151 Apr  1 23:38 dhcpv6snooping
+! -rw-r----- 1      147 May  4 23:11 dhcpsnooping
+! -rw-r----- 1      151 May  4 23:11 dhcpv6snooping
 ! drwsrwsrwt 2     4096 Jan  2 02:35 info
 ! drwsrwsrwt 2     4096 Aug  6  2023 log
 ! drwsrwsrwt 3     4096 Aug  6  2023 monitor
 ! drwsrwsrwt 2     4096 Aug 14  2023 reboot-info
-! -rw-r----- 1     3548 Apr  1 23:38 startup-config.conf
-! -rw-r--r-- 1   818912 May  4 00:00 syslog
+! -rw-r----- 1     3589 May  4 23:11 startup-config.conf
+! -rw-r--r-- 1   835496 May  4 19:56 syslog
 ! drwsrwsrwt 2     4096 Mar 16 17:14 syslogfile
 ! 3.9G bytes total (3.6G bytes free) 
 !
@@ -242,6 +242,7 @@ interface vlan65
 !
 interface vlan730
  ip address 192.168.192.71/24
+ ip address 192.168.192.171/24 secondary
 !
 interface vlan787
  mtu 9216

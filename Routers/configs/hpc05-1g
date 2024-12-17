@@ -1,0 +1,375 @@
+!RANCID-CONTENT-TYPE: smc
+!
+!
+!
+!        Unit             SW version         Boot version         HW version      
+! ------------------- ------------------- ------------------- ------------------- 
+!          1               4.1.0.16            1.0.0.14            00.00.02       
+!
+!
+! # show system
+! Unit          Type          
+! ---- ---------------------- 
+!  1     PowerConnect 5548    
+! Unit Main Power Supply Redundant Power Supply 
+! ---- ----------------- ---------------------- 
+!  1          OK                                
+! Unit    Fans Status     
+! ---- ------------------ 
+!  1           ON         
+! Unit   Temperature (Celsius)   Temperature Sensor Status 
+! Unit	Status
+! ----	------
+! 1	OK             
+! 
+! ---- --------------- 
+!  1    348,20:24:07   
+!
+!
+! # dir
+! Directory of flash:
+!      File Name      Permission Flash Size Data Size        Modified         
+! ------------------- ---------- ---------- --------- ----------------------- 
+! dhcpsn.prv              --       131040      --      01-Oct-2006 11:40:01   
+! directry.prv            --       65520       --      01-Oct-2006 11:40:01   
+! image-1                 rw      6684672    6684672   01-Oct-2006 11:40:01   
+! image-2                 rw      6684672    6684672   12-Feb-2008 15:25:38   
+! sshkeys.prv             --       65520       --      01-Oct-2006 15:16:45   
+! startup-config          rw       524160     7463     05-Jan-2010 17:33:25   
+! syslog1.sys             r-       131072      --      01-Oct-2006 11:40:01   
+! syslog2.sys             r-       131072      --      01-Oct-2006 11:40:01   
+! Total size of flash: 16121856 bytes
+! Free size of flash: 1638608 bytes
+!
+!
+! # show vlan
+! Vlan     Name        Tagged Ports      UnTagged Ports     Type    Authorization 
+! ---- ------------ ------------------ ------------------ --------- ------------- 
+!  1        1            gi1/0/47      gi1/0/10,te1/0/1,   Default    Required    
+!                                      gi2/0/1-48,                                
+!                                      te2/0/1-2,                                 
+!                                      gi3/0/1-48,                                
+!                                      te3/0/1-2,                                 
+!                                      gi4/0/1-48,                                
+!                                      te4/0/1-2,                                 
+!                                      gi5/0/1-48,                                
+!                                      te5/0/1-2,                                 
+!                                      gi6/0/1-48,                                
+!                                      te6/0/1-2,                                 
+!                                      gi7/0/1-48,                                
+!                                      te7/0/1-2,                                 
+!                                      gi8/0/1-48,                                
+!                                      te8/0/1-2,Po1-32                           
+!  3        3       gi1/0/10,gi1/0/47,    gi1/0/22-24     permanent   Required    
+!                   te1/0/1                                                       
+! 401      401      gi1/0/10,gi1/0/47,                    permanent   Required    
+!                   te1/0/1                                                       
+! 730    Network    gi1/0/10,gi1/0/47,                    permanent   Required    
+!                   te1/0/1                                                       
+! 772      772      gi1/0/10,gi1/0/47,                    permanent   Required    
+!                   te1/0/1                                                       
+! 773      773      gi1/0/10,gi1/0/47,      gi1/0/12      permanent   Required    
+!                   te1/0/1                                                       
+! 774      774      gi1/0/10,gi1/0/47,                    permanent   Required    
+!                   te1/0/1                                                       
+! 786      786      gi1/0/10,gi1/0/47,                    permanent   Required    
+!                   te1/0/1                                                       
+! 787      787      gi1/0/10,gi1/0/47,                    permanent   Required    
+!                   te1/0/1                                                       
+! 792      792      gi1/0/10,gi1/0/47,                    permanent   Required    
+!                   te1/0/1                                                       
+! 799      799      gi1/0/10,gi1/0/47,                    permanent   Required    
+!                   te1/0/1                                                       
+! 4041 hpc-manageme gi1/0/10,gi1/0/47, gi1/0/9,gi1/0/11,  permanent   Required    
+!      nt           te1/0/1            gi1/0/13,                                  
+!                                      gi1/0/15-20,                               
+!                                      gi1/0/38-40,                               
+!                                      gi1/0/48,te1/0/2                           
+! 4044  hpc-envmon   gi1/0/10,te1/0/1  gi1/0/7-8,gi1/0/47 permanent   Required    
+! 4045 hpc-switches gi1/0/10,gi1/0/47,      gi1/0/21      permanent   Required    
+!                   te1/0/1                                                       
+! 4046 hss-manageme gi1/0/10,gi1/0/47, gi1/0/1-6,         permanent   Required    
+!      nt           te1/0/1            gi1/0/14,                                  
+!                                      gi1/0/25-37,                               
+!                                      gi1/0/41-46                                
+vlan database
+vlan 3,401,730,772-774,786-787,792,799,4041,4044-4046
+exit
+voice vlan oui-table add 000181 Nortel__________________
+voice vlan oui-table add 0001e3 Siemens_AG_phone________
+voice vlan oui-table add 00036b Cisco_phone_____________
+voice vlan oui-table add 00096e Avaya___________________
+voice vlan oui-table add 000fe2 H3C_Aolynk______________
+voice vlan oui-table add 001049 Shoretel________________
+voice vlan oui-table add 0060b9 Philips_and_NEC_AG_phone
+voice vlan oui-table add 00907a Polycom/Veritel_phone___
+voice vlan oui-table add 00e0bb 3Com_phone______________
+iscsi target port 860 address 0.0.0.0
+iscsi target port 3260 address 0.0.0.0
+iscsi target port 9876 address 0.0.0.0
+iscsi target port 20002 address 0.0.0.0
+iscsi target port 20003 address 0.0.0.0
+iscsi target port 25555 address 0.0.0.0
+no eee enable
+hostname HPC05-1G
+!enable password level 15 <removed>
+!username admin password <removed>
+ivilege 15
+!username rts-admin password <removed>
+e
+ip ssh server
+snmp-server community pegasushpc rw view Default
+snmp-server community public ro view Default
+snmp-server community rts-community ro view Default
+snmp-server community rts-network ro view Default
+snmp-server host 172.20.251.2 traps version 2c pegasushpc udp-port 161
+snmp-server host 172.20.251.100 traps version 2c pegasushpc udp-port 161
+snmp-server host 192.168.192.249 traps version 2c rts-network
+snmp-server host 192.168.192.250 traps version 2c rts-network
+no ip telnet server
+!
+interface vlan 730
+ name Network
+ ip address 192.168.192.91 255.255.255.0
+!
+interface vlan 4041
+ name hpc-management
+!
+interface vlan 4044
+ name hpc-envmon
+!
+interface vlan 4045
+ name hpc-switches
+ ip address 172.20.251.12 255.255.255.0
+!
+interface vlan 4046
+ name hss-management
+!
+interface gigabitethernet1/0/1
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/2
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/3
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/4
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/5
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/6
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/7
+ description pdu5a
+ spanning-tree portfast
+ switchport access vlan 4044
+!
+interface gigabitethernet1/0/8
+ description pdu5b
+ spanning-tree portfast
+ switchport access vlan 4044
+!
+interface gigabitethernet1/0/9
+ description fastscratch-bmc
+ spanning-tree portfast
+ switchport access vlan 4041
+!
+interface gigabitethernet1/0/10
+ description Rubeel-machine
+ spanning-tree portfast
+ switchport mode trunk
+ switchport access vlan 4041
+!
+interface gigabitethernet1/0/11
+ description syncbox-bmc
+ spanning-tree portfast
+ switchport access vlan 4041
+!
+interface gigabitethernet1/0/12
+ description syncbox-eth2
+ spanning-tree portfast
+ switchport access vlan 773
+!
+interface gigabitethernet1/0/13
+ spanning-tree portfast
+ switchport access vlan 4041
+!
+interface gigabitethernet1/0/14
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/15
+ spanning-tree portfast
+ switchport access vlan 4041
+!
+interface gigabitethernet1/0/16
+ spanning-tree portfast
+ switchport access vlan 4041
+!
+interface gigabitethernet1/0/17
+ spanning-tree portfast
+ switchport access vlan 4041
+!
+interface gigabitethernet1/0/18
+ spanning-tree portfast
+ switchport access vlan 4041
+!
+interface gigabitethernet1/0/19
+ spanning-tree portfast
+ switchport access vlan 4041
+!
+interface gigabitethernet1/0/20
+ spanning-tree portfast
+ switchport access vlan 4041
+!
+interface gigabitethernet1/0/21
+ spanning-tree portfast
+ switchport access vlan 4045
+!
+interface gigabitethernet1/0/22
+ spanning-tree portfast
+ switchport access vlan 3
+!
+interface gigabitethernet1/0/23
+ spanning-tree portfast
+ switchport access vlan 3
+!
+interface gigabitethernet1/0/24
+ spanning-tree portfast
+ switchport access vlan 3
+!
+interface gigabitethernet1/0/25
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/26
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/27
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/28
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/29
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/30
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/31
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/32
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/33
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/34
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/35
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/36
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/37
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/38
+ spanning-tree portfast
+ switchport access vlan 4041
+!
+interface gigabitethernet1/0/39
+ spanning-tree portfast
+ switchport access vlan 4041
+!
+interface gigabitethernet1/0/40
+ spanning-tree portfast
+ switchport access vlan 4041
+!
+interface gigabitethernet1/0/41
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/42
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/43
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/44
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/45
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/46
+ spanning-tree portfast
+ switchport access vlan 4046
+!
+interface gigabitethernet1/0/47
+ description syncbox-eth3
+ spanning-tree portfast
+ switchport mode trunk
+ switchport access vlan 4044
+ switchport trunk native vlan 4044
+!
+interface gigabitethernet1/0/48
+ spanning-tree portfast
+ switchport access vlan 4041
+!
+interface tengigabitethernet1/0/1
+ switchport mode trunk
+ switchport access vlan none
+!
+interface tengigabitethernet1/0/2
+ switchport access vlan 4041
+!
+Default settings:
+Service tag: F98TTS1
+SW version 4.1.0.16 (date  17-Mar-2014 time  15:16:29)
+Gigabit Ethernet Ports
+=============================
+no shutdown
+speed 1000
+duplex full
+negotiation
+flow-control on
+mdix auto
+no back-pressure
+interface vlan 1
+interface port-channel 1 - 32
+spanning-tree
+spanning-tree mode RSTP
+qos basic
+qos trust cos
+eee enable

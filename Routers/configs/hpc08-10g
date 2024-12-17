@@ -14,7 +14,7 @@
 !                    ^
 !
 !Flash: Directory of flash:/  
-!Flash: total 9276
+!Flash: total 9296
 !Flash: -rw-r--r-- 1    1255 Jan 31  2023 649D990BD64F.1.lic
 !Flash: -rw-r--r-- 1 8867338 Jan 31  2023 FSOS-webImage-v7.4.3.r.bin
 !Flash: drwxr-xr-x 2    4096 May 21  2066 boot
@@ -28,7 +28,7 @@
 !Flash: drwsrwsrwt 3    4096 Jan 31  2023 monitor
 !Flash: drwsrwsrwt 2    4096 Jan 31  2023 reboot-info
 !Flash: -rw-r----- 1    2016 Dec  8 08:02 startup-config.conf
-!Flash: -rw-r--r-- 1  573362 Dec 15 07:43 syslog
+!Flash: -rw-r--r-- 1  590138 Dec 16 03:39 syslog
 !Flash: drwsrwsrwt 2    4096 Nov 12 06:57 syslogfile
 !Flash: 3.9G bytes total (3.6G bytes free) 
 !

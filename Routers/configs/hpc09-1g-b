@@ -1,0 +1,479 @@
+!RANCID-CONTENT-TYPE: smc
+!
+!
+!Chassis type: Dell Networking Switch
+!
+! Machine Description............... Dell Networking Switch
+! System Model ID................... N1548
+! Machine Type...................... Dell Networking N1548
+! Serial Number..................... CN0V143P282987120235A02
+! Manufacturer...................... 0xbc00
+! Burned In MAC Address............. 1418.77E8.F856
+! System Object ID.................. 1.3.6.1.4.1.674.10895.3065
+! SOC Version....................... BCM56150_A0
+! HW Version........................ 2
+! CPLD Version...................... 16
+! unit active      backup      current-active next-active
+! ---- ----------- ----------- -------------- --------------
+! 1    6.2.6.6     6.2.6.6     6.2.6.6        6.2.6.6
+!
+!
+! #show system
+! System Contact:
+! System Name: HPC09-1G-B
+! System Location:
+! Burned In MAC Address: 1418.77E8.F856
+! System Object ID: 1.3.6.1.4.1.674.10895.3065
+! System Model ID: N1548
+! Machine Type: Dell Networking N1548
+! System Thermal Conditions:
+! Unit	Description	Status
+! ----	-----------	------
+! 
+! Unit	Description	Status
+! ----	-----------	------
+! 
+! Unit	Description	Status
+! ----	-----------	------
+! 1	MAC		
+! 1	PHY		
+! 
+! Fans:
+! Unit Description Status
+! ---- ----------- ------
+! 1    Fan-1         OK
+! 1    Fan-2         OK
+!
+! Unit	Description	Status
+! ----	-----------	------
+! 1	System		OK
+! 1	Main		OK
+! 1	RPS		No Power
+!
+!
+! #dir
+! Attr  Size(bytes)          Creation Time        Name
+!  drwx                 2904 Aug 16 2024 00:18:14 .
+!  drwx                    0 Aug 18 2015 14:00:57 ..
+!   -rw                   96 Apr 08 2024 21:51:57 snmpOprData.cfg
+!   -rw                 5747 Aug 16 2024 00:18:14 running-config
+!   -rw                  156 Jan 09 2017 11:13:19 dh512.pem
+!   -rw             19926113 Oct 13 2015 05:34:21 image1
+!   -rw             19926113 Oct 13 2015 05:34:21 image2
+!   -rw                   64 Jun 19 2023 23:29:57 logNvmSave.bin
+!   -rw                  245 Jan 09 2017 11:13:19 dh1024.pem
+!  drwx                  160 Jan 01 1970 00:00:42 user-apps
+!   -rw                   72 Apr 08 2024 21:51:52 coredump_regular_config.md5sum
+!   -rw                  668 May 23 2017 01:12:07 ssh_host_dsa_key
+!   -rw                  225 May 23 2017 01:11:46 ssh_host_rsa_key.pub
+!   -rw                    0 Apr 08 2024 21:51:27 olog0.txt
+!   -rw                 1323 Aug 16 2024 00:18:11 fastpath.cfg
+!   -rw                    0 Jun 19 2023 23:29:57 olog1.txt
+!   -rw                    0 May 13 2020 10:52:44 olog2.txt
+!   -rw                  172 May 23 2017 01:02:42 hpc_port_broad.cfg
+!   -rw                  528 May 23 2017 01:11:47 ssh_host_key
+!   -rw                  887 May 23 2017 01:11:46 ssh_host_rsa_key
+!   -rw                   70 Apr 08 2024 21:51:13 coredump_debug_config.md5sum
+!   -rw                  601 May 23 2017 01:12:07 ssh_host_dsa_key.pub
+!  drwx                  360 Jun 19 2023 23:29:57 crashlogs
+!  drwx                    0 Apr 08 2024 21:51:50 ramcp
+!   -rw                 1323 Aug 16 2024 00:18:14 fastpathRun.cfg
+!   -rw                   68 Apr 08 2024 21:51:52 hpc_broad.cfg
+!   -rw                  333 May 23 2017 01:11:47 ssh_host_key.pub
+!   -rw                16328 Apr 08 2024 21:51:49 log2.bin
+!   -rw                  367 Apr 08 2024 21:51:52 coredump_regular_config
+!   -rw                    0 Apr 08 2024 21:51:27 slog0.txt
+!   -rw                    0 Jun 19 2023 23:29:57 slog1.txt
+!   -rw                    0 May 13 2020 10:52:44 slog2.txt
+!   -rw                 5747 Aug 16 2024 00:18:12 startup-config
+!  -rwx                   10 Jan 01 1970 00:00:18 user.start
+!   -rw                   72 Apr 08 2024 21:51:27 hpc_add_broad.cfg
+!   -rw                    5 Apr 08 2024 21:51:27 ologNdx0.txt
+!   -rw                    5 Jun 19 2023 23:29:57 ologNdx1.txt
+!   -rw                    5 May 13 2020 10:52:44 ologNdx2.txt
+!   -rw                  588 Apr 08 2024 21:51:13 coredump_debug_config
+! Total Size: 97591296
+! Bytes Used: 39891355
+! Bytes Free: 57699941
+!
+!
+! #show vlan
+! VLAN   Name                             Ports          Type
+! -----  ---------------                  -------------  --------------
+! 1      default                          Po1-64,        Default
+!                                         Te1/0/1-4
+! 730    Network                          Te1/0/1-2      Static
+! 772    Storage                          Gi1/0/39,      Static
+!                                         Te1/0/1-2
+! 773    VLAN0773                         Gi1/0/48,      Static
+!                                         Te1/0/1-2
+! 774    Pegasus-Login                    Te1/0/1-2      Static
+! 786    Cerberus                         Te1/0/1-2      Static
+! 787    Raptor                           Te1/0/1-2      Static
+! 792    Viper                            Te1/0/1-2      Static
+! 799    Dacian-Test                      Te1/0/1-2      Static
+! 4041   hpc-management                   Gi1/0/1-38,    Static
+!                                         Gi1/0/40-47,
+!                                         Te1/0/1-2
+! 4045   hpc-switches                     Te1/0/1-2      Static
+!Current Configuration:
+configure
+vlan 730,772-774,786-787,792,799,4041,4045
+exit
+vlan 730
+name "Network"
+exit
+vlan 772
+name "Storage"
+exit
+vlan 774
+name "Pegasus-Login"
+exit
+vlan 786
+name "Cerberus"
+exit
+vlan 787
+name "Raptor"
+exit
+                  vlan 792
+name "Viper"
+exit
+vlan 799
+name "Dacian-Test"
+exit
+vlan 4041
+name "hpc-management"
+exit
+vlan 4045
+name "hpc-switches"
+exit
+ip telnet server disable
+hostname "HPC09-1G-B"
+stack
+member 1 3    ! N1548
+exit
+no logging console
+logging 2606:69c0:9120:782c:20c:29ff:fe0b:8d46
+exit
+logging 161.253.199.145
+exit
+system jumbo mtu 9216
+                  interface vlan 1
+ip address dhcp
+exit
+interface vlan 730
+ip address 192.168.192.86 255.255.255.0
+exit
+interface vlan 773
+exit
+interface vlan 4041
+exit
+interface vlan 4045
+ip address 172.20.251.23 255.255.255.0
+exit
+!username "admin" password <removed>
+!username "rts-admin" password <removed>
+ip ssh server
+ip ssh protocol 2
+!
+interface Gi1/0/1
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+                  !
+interface Gi1/0/2
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/3
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/4
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/5
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+                  exit
+!
+interface Gi1/0/6
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/7
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/8
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/9
+duplex full
+spanning-tree portfast
+                  switchport access vlan 4041
+exit
+!
+interface Gi1/0/10
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/11
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/12
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/13
+duplex full
+                  spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/14
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/15
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/16
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/17
+                  duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/18
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/19
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/20
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+                  interface Gi1/0/21
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/22
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/23
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/24
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+                  !
+interface Gi1/0/25
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/26
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/27
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/28
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+                  exit
+!
+interface Gi1/0/29
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/30
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/31
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/32
+duplex full
+spanning-tree portfast
+                  switchport access vlan 4041
+exit
+!
+interface Gi1/0/33
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/34
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/35
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/36
+duplex full
+                  spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/37
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/38
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/39
+duplex full
+description "Raptor-store-1"
+spanning-tree portfast
+switchport access vlan 772
+exit
+!
+                  interface Gi1/0/40
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/41
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/42
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/43
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+                  !
+interface Gi1/0/44
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/45
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/46
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+exit
+!
+interface Gi1/0/47
+duplex full
+spanning-tree portfast
+switchport access vlan 4041
+                  exit
+!
+interface Gi1/0/48
+duplex full
+spanning-tree portfast
+switchport access vlan 773
+exit
+!
+interface Te1/0/1
+switchport mode trunk
+exit
+!
+interface Te1/0/2
+switchport mode trunk
+exit
+snmp-server engineid local 800002a203141877e8f856
+snmp-server community "rts-network" ro
+snmp-server host 192.168.192.249 "rts-network"
+snmp-server host 192.168.192.250 "rts-network"
+exit

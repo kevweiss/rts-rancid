@@ -1,0 +1,602 @@
+!RANCID-CONTENT-TYPE: arista
+!
+!Model: Dell EMC Real Time Operating System Software
+!Dell EMC Operating System Version: 2.0
+!Dell EMC Application Software Version: 9.14(2.8)
+!Model: Copyright (c) 1999-2019 by Dell Inc. All Rights Reserved.
+!Build Time: Mon Sep 14 14:28:21 2020
+!Build Path: /build/build01/SW/SRC
+!Model: System image file is "system://B"
+!System Type: S3048-ON 
+!Control Processor: Intel Rangeley with 2 Gbytes (2127654912 bytes) of memory, core(s) 2.
+!Model: 8G bytes of boot flash memory.
+!Model:   1 52-port GE/TE (SG-ON)
+!Model:  48 GigabitEthernet/IEEE 802.3 interface(s)
+!Model:   4 Ten GigabitEthernet/IEEE 802.3 interface(s)
+!
+!                ^
+!% Error: Invalid input at "^" marker.
+!
+!
+!
+!Flash: Directory of flash:
+!Flash:   1  drwx       4096   Jan 01 1980 00:00:00 +00:00 .  
+!Flash:   2  drwx       4224   Dec 17 2024 14:39:55 +00:00 ..  
+!Flash:   3  drwx       4096   Jan 05 2018 20:51:24 +00:00 TRACE_LOG_DIR  
+!Flash:   4  drwx       4096   Jan 05 2018 20:51:24 +00:00 CONFD_LOG_DIR  
+!Flash:   5  drwx       4096   Jan 05 2018 20:51:24 +00:00 CORE_DUMP_DIR  
+!Flash:   6  d---       4096   Jan 05 2018 20:51:24 +00:00 ADMIN_DIR  
+!Flash:   7  drwx       4096   Jan 05 2018 20:51:24 +00:00 RUNTIME_PATCH_DIR  
+!Flash:   8  drwx       4096   Aug 07 2023 14:55:22 +00:00 CONFIG_TEMPLATE  
+!Flash:   9  -rwx          0   May 14 2020 07:19:22 +00:00 pdtrc.lo0  
+!Flash:  10  -rwx       9090   Aug 07 2023 14:56:02 +00:00 last-cold-st-config  
+!Flash:  11  -rwx       9656   May 22 2024 18:35:30 +00:00 startup-config  
+!Flash:  12  -rwx          0   Aug 07 2023 14:55:52 +00:00 pdtrcp.lo0  
+!Flash:  13  -rwx          0   May 14 2020 07:18:50 +00:00 earlyCliParserDbg  
+!Flash:  14  -rwx     267213   May 22 2024 18:35:32 +00:00 confd_cdb.tar.gz  
+!Flash:  15  -rwx       8391   Oct 24 2020 01:16:30 +00:00 startup-config.bak  
+!Flash:  16  -rwx          1   Jan 04 2023 13:41:44 +00:00 boots.txt  
+!Flash:  17  -rwx         56   May 22 2024 18:35:32 +00:00 confd_cdb.tar.gz.version  
+!
+!System Type            : S3048-ON   
+!System Mode            : 1.0       
+!Software Version       : 9.14(2.8)
+!Unit Type               Serial Number  Part Number  Rev  Piece Part ID            Rev  Svc Tag  Exprs Svc Code
+!--------------------------------------------------------------------------------------------------------------
+!* 1  S3048-ON-01-FE-52T NA             0J4T5K       A02  CN-0J4T5K-CES00-814-0008 A02  C98SG02  266 803 476 50
+!  1  S3048-ON-PWR-AC-R  NA             00X3X6       A00  TH-00X3X6-17971-7BL-0CKB A00  N/A      NA            
+!  1  S3048-ON-FAN-R     NA             05JHJD       A00  CN-05JHJD-CES00-7CN-0214 A00  N/A      NA            
+!  1  S3048-ON-FAN-R     NA             05JHJD       A00  CN-05JHJD-CES00-7CN-0213 A00  N/A      NA            
+!  1  S3048-ON-FAN-R     NA             05JHJD       A00  CN-05JHJD-CES00-7CN-0256 A00  N/A      NA            
+! * - Management Unit 
+!Software Protocol Configured 
+!--------------------------------------------------------------
+!  LLDP 
+!  RSTP 
+!  SNMP 
+!  Spanning-Tree 
+!
+!
+!BootExtension:                 ^
+!BootExtension: % Error: Invalid input at "^" marker.
+!
+!Extensions:
+!                ^
+!% Error: Invalid input at "^" marker.
+!
+!*****************************
+!*** unsaved changes exist ***
+!*****************************
+!           ^
+!% Error: Invalid input at "^" marker.
+!
+Current Configuration ...
+! Version 9.14(2.8)
+! Last configuration change at Wed May 22 18:35:22 2024 by admin
+! Startup-config last updated at Wed May 22 18:35:30 2024 by admin
+!
+boot system stack-unit 1 primary system://B
+boot system stack-unit 1 secondary system://B
+!
+hostname S3048-ON-1
+!
+protocol lldp 
+ advertise management-tlv management-address system-capabilities system-description system-name 
+!
+redundancy auto-synchronize full
+!
+!enable password <removed>
+!
+!username admin password <removed>
+!username rts-admin password <removed>
+!username shash password <removed>
+!
+protocol spanning-tree rstp 
+ no disable 
+!
+stack-unit 1 provision S3048-ON
+!
+interface GigabitEthernet 1/1
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/2
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/3
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/4
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/5
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/6
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/7
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/8
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/9
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/10
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/11
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/12
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/13
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/14
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/15
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/16
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/17
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/18
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/19
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/20
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/21
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/22
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/23
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/24
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/25
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/26
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/27
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/28
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/29
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/30
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/31
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/32
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/33
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/34
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/35
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/36
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/37
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/38
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/39
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/40
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/41
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/42
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/43
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/44
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/45
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/46
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/47
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface GigabitEthernet 1/48
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ spanning-tree rstp edge-port 
+ no shutdown
+!
+interface TenGigabitEthernet 1/49
+ no ip address
+ mtu 12000
+ shutdown
+!
+interface TenGigabitEthernet 1/50
+ no ip address
+ mtu 12000
+ shutdown
+!
+interface TenGigabitEthernet 1/51
+ description S5048F-ON-5 LAG
+ no ip address
+ mtu 12000
+!  
+ port-channel-protocol LACP 
+  port-channel 1 mode active 
+ no shutdown
+!
+interface TenGigabitEthernet 1/52
+ description S5048F-ON-5 LAG
+ no ip address
+ mtu 12000
+!  
+ port-channel-protocol LACP 
+  port-channel 1 mode active 
+ no shutdown
+!
+interface ManagementEthernet 1/1
+ shutdown
+!
+interface ManagementEthernet 2/1
+ shutdown
+!
+interface ManagementEthernet 3/1
+ shutdown
+!
+interface ManagementEthernet 4/1
+ shutdown
+!
+interface ManagementEthernet 5/1
+ shutdown
+!
+interface ManagementEthernet 6/1
+ shutdown
+!
+interface Port-channel 1
+ no ip address
+ mtu 12000
+ portmode hybrid
+ switchport
+ lacp long-timeout 
+ no shutdown
+!
+interface Vlan 1
+ mtu 12000
+!untagged Port-channel 1
+!
+interface Vlan 2
+ ip address 172.30.253.250/23
+ mtu 12000
+ tagged Port-channel 1
+ untagged GigabitEthernet 1/1-1/48
+ no shutdown
+!
+interface Vlan 730
+ description Network
+ ip address 192.168.192.221/24
+ mtu 12000
+ tagged Port-channel 1
+ no shutdown
+!
+logging 161.253.199.145
+logging 2606:69c0:9120:782c:20c:29ff:fe0b:8d46
+!
+snmp-server community pegasushpc rw 
+snmp-server community rts-network ro 
+snmp-server enable traps bgp
+snmp-server enable traps snmp authentication coldstart linkdown linkup syslog-reachable syslog-unreachable
+snmp-server enable traps vrrp
+snmp-server enable traps lacp
+snmp-server enable traps entity
+snmp-server enable traps stack
+snmp-server enable traps stp
+snmp-server enable traps ecfm
+snmp-server enable traps vlt
+snmp-server enable traps xstp
+snmp-server enable traps isis
+snmp-server enable traps config
+snmp-server enable traps envmon cam-utilization fan supply temperature
+snmp-server enable traps ecmp
+snmp-server enable traps mac
+snmp-server host 172.30.253.11 traps version 1 pegasushpc udp-port 162
+snmp-server host 192.168.192.249 traps version 2c rts-network udp-port 162
+snmp-server host 192.168.192.250 traps version 2c rts-network udp-port 161
+snmp-server host 192.168.192.250 traps version 2c rts-network udp-port 162
+!
+no ip telnet server enable
+!
+ip ssh server enable
+!
+line console 0
+! password <removed>
+ privilege level 15
+line vty 0
+line vty 1
+line vty 2
+line vty 3
+line vty 4
+line vty 5
+line vty 6
+line vty 7
+line vty 8
+line vty 9
+!
+reload-type
+ boot-type normal-reload
+ config-scr-download enable
+!
+end

@@ -1,0 +1,663 @@
+!RANCID-CONTENT-TYPE: arista
+!
+!Model: Dell EMC Real Time Operating System Software
+!Dell EMC Operating System Version: 2.0
+!Dell EMC Application Software Version: 9.14(2.8)
+!Model: Copyright (c) 1999-2019 by Dell Inc. All Rights Reserved.
+!Build Time: Mon Sep 14 14:28:28 2020
+!Build Path: /build/build01/SW/SRC
+!Model: System image file is "system://B"
+!System Type: S5048F-ON 
+!Control Processor: Intel Rangeley with 3 Gbytes (3203268608 bytes) of memory, core(s) 4.
+!Model: 16G bytes of boot flash memory.
+!Model:   1 54-port TE/TF/FO/FI/HU G (S5048F-ON)
+!Model:  48 Twenty Five GigabitEthernet/IEEE 802.3 interface(s)
+!Model:   6 Hundred GigabitEthernet/IEEE 802.3 interface(s)
+!
+!                 ^
+!% Error: Invalid input at "^" marker.
+!
+!
+!
+!Flash: Directory of flash:
+!Flash:   1  drwx       4096   Dec 31 1979 19:00:00 -05:00 .  
+!Flash:   2  drwx       4560   Dec 17 2024 08:32:28 -05:00 ..  
+!Flash:   3  drwx       4096   Apr 26 2018 01:56:58 -05:00 TRACE_LOG_DIR  
+!Flash:   4  drwx       4096   Apr 26 2018 01:56:58 -05:00 CONFD_LOG_DIR  
+!Flash:   5  drwx       4096   Apr 26 2018 01:56:58 -05:00 CORE_DUMP_DIR  
+!Flash:   6  d---       4096   Apr 26 2018 01:56:58 -05:00 ADMIN_DIR  
+!Flash:   7  drwx       4096   Apr 26 2018 01:56:58 -05:00 RUNTIME_PATCH_DIR  
+!Flash:   8  -rwx          0   Apr 01 2021 17:10:38 -05:00 pdtrc.lo0  
+!Flash:   9  -rwx      10257   Aug 12 2024 07:06:34 -05:00 last-cold-st-config  
+!Flash:  10  -rwx      10705   Oct 23 2024 10:25:50 -05:00 startup-config  
+!Flash:  11  -rwx          0   Aug 12 2024 07:06:24 -05:00 pdtrcp.lo0  
+!Flash:  12  -rwx     267211   Oct 23 2024 10:25:54 -05:00 confd_cdb.tar.gz  
+!Flash:  13  -rwx      10668   Aug 12 2024 07:11:26 -05:00 startup-config.bak  
+!Flash:  14  -rwx         56   Oct 23 2024 10:25:54 -05:00 confd_cdb.tar.gz.version  
+!
+!System Type            : S5048F-ON  
+!System Mode            : 1.0       
+!Software Version       : 9.14(2.8)
+!Unit Type               Serial Number  Part Number  Rev  Piece Part ID            Rev  Svc Tag  Exprs Svc Code
+!--------------------------------------------------------------------------------------------------------------
+!* 1  S5048F-ON-01-FE-54 NA             0JGW01       A00  CN-0JGW01-CES00-84E-0023 A00  FL6TG02  339 329 761 94
+!  1  S5048F-ON-PWR-AC-R NA             0HXWNF       A00  CN-0HXWNF-DED00-83U-0019 A00  N/A      NA            
+!  1  S5048F-ON-PWR-AC-R NA             0HXWNF       A00  CN-0HXWNF-DED00-83U-001D A00  N/A      NA            
+!  1  S5048F-ON-FAN-R    NA             0X3WCP       A00  CN-0X3WCP-CES00-848-0332 A00  N/A      NA            
+!  1  S5048F-ON-FAN-R    NA             0X3WCP       A00  CN-0X3WCP-CES00-83N-0196 A00  N/A      NA            
+!  1  S5048F-ON-FAN-R    NA             0X3WCP       A00  CN-0X3WCP-CES00-848-0333 A00  N/A      NA            
+!  1  S5048F-ON-FAN-R    NA             0X3WCP       A00  CN-0X3WCP-CES00-848-0334 A00  N/A      NA            
+! * - Management Unit 
+!Software Protocol Configured 
+!--------------------------------------------------------------
+!  LLDP 
+!  NTP 
+!  RSTP 
+!  SNMP 
+!  Spanning-Tree 
+!
+!
+!BootExtension:                  ^
+!BootExtension: % Error: Invalid input at "^" marker.
+!
+!Extensions:
+!                 ^
+!% Error: Invalid input at "^" marker.
+!
+!*****************************
+!*** unsaved changes exist ***
+!*****************************
+!            ^
+!% Error: Invalid input at "^" marker.
+!
+Current Configuration ...
+! Version 9.14(2.8)
+! Last configuration change at Wed Oct 23 15:25:47 2024 by admin
+! Startup-config last updated at Wed Oct 23 15:25:51 2024 by admin
+!
+boot system stack-unit 1 primary system://B
+boot system stack-unit 1 secondary system://B
+!
+logging coredump stack-unit  1 
+logging coredump stack-unit  2 
+logging coredump stack-unit  3 
+logging coredump stack-unit  4 
+logging coredump stack-unit  5 
+logging coredump stack-unit  6 
+!
+hostname S5048F-ON-5
+!
+protocol lldp 
+ advertise management-tlv management-address system-capabilities system-description system-name 
+ hello 5 
+ advertise interface-port-desc 
+!
+redundancy auto-synchronize full
+!
+!enable password <removed>
+!
+!username admin password <removed>
+!username rts-admin password <removed>
+!
+protocol spanning-tree rstp 
+ no disable 
+!
+allow unsupported-transceiver
+!
+stack-unit 1 provision S5048F-ON
+!
+interface twentyFiveGigE 1/1
+ description S3048-ON-1 LAG
+ no ip address
+ mtu 9416
+!  
+ port-channel-protocol LACP 
+  port-channel 1 mode active 
+ no shutdown
+!
+interface twentyFiveGigE 1/2
+ description S3048-ON-1 LAG
+ no ip address
+ mtu 9416
+!  
+ port-channel-protocol LACP 
+  port-channel 1 mode active 
+ no shutdown
+!
+interface twentyFiveGigE 1/3
+ description S3048-ON-2 LAG
+ no ip address
+ mtu 9416
+!  
+ port-channel-protocol LACP 
+  port-channel 2 mode active 
+ no shutdown
+!
+interface twentyFiveGigE 1/4
+ description S3048-ON-2 LAG
+ no ip address
+ mtu 9416
+!  
+ port-channel-protocol LACP 
+  port-channel 2 mode active 
+ no shutdown
+!
+interface twentyFiveGigE 1/5
+ description S3048-ON-3 LAG
+ no ip address
+ mtu 9416
+!  
+ port-channel-protocol LACP 
+  port-channel 3 mode active 
+ no shutdown
+!
+interface twentyFiveGigE 1/6
+ description S3048-ON-3 LAG
+ no ip address
+ mtu 9416
+!  
+ port-channel-protocol LACP 
+  port-channel 3 mode active 
+ no shutdown
+!
+interface twentyFiveGigE 1/7
+ description S3048-ON-4 LAG
+ no ip address
+ mtu 9416
+!  
+ port-channel-protocol LACP 
+  port-channel 4 mode active 
+ no shutdown
+!
+interface twentyFiveGigE 1/8
+ description S3048-ON-4 LAG
+ no ip address
+ mtu 9416
+!  
+ port-channel-protocol LACP 
+  port-channel 4 mode active 
+ no shutdown
+!
+interface twentyFiveGigE 1/9
+ description S3048-ON-5 LAG
+ no ip address
+ mtu 9416
+!  
+ port-channel-protocol LACP 
+  port-channel 5 mode active 
+ no shutdown
+!
+interface twentyFiveGigE 1/10
+ description S3048-ON-5 LAG
+ no ip address
+ mtu 9416
+!  
+ port-channel-protocol LACP 
+  port-channel 5 mode active 
+ no shutdown
+!
+interface twentyFiveGigE 1/11
+ description S3048-ON-6 LAG
+ no ip address
+ mtu 9416
+!  
+ port-channel-protocol LACP 
+  port-channel 6 mode active 
+ no shutdown
+!
+interface twentyFiveGigE 1/12
+ description S3048-ON-6 LAG
+ no ip address
+ mtu 9416
+!  
+ port-channel-protocol LACP 
+  port-channel 6 mode active 
+ no shutdown
+!
+interface twentyFiveGigE 1/13
+ description warewulf
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface twentyFiveGigE 1/14
+ description warewulf
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface twentyFiveGigE 1/15
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+ no fec enable
+!
+interface twentyFiveGigE 1/16
+ description star-fish-tranfer
+ no ip address
+ mtu 9416
+!  
+ port-channel-protocol LACP 
+  port-channel 7 mode active 
+ no shutdown
+ no fec enable
+!
+interface twentyFiveGigE 1/17
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface twentyFiveGigE 1/18
+ description Star-fish-transfer
+ no ip address
+ mtu 9416
+!  
+ port-channel-protocol LACP 
+  port-channel 7 mode active 
+ no shutdown
+ no fec enable
+!
+interface twentyFiveGigE 1/19
+ description EXI-Machine
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface twentyFiveGigE 1/20
+ description EXI-machine-public
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface twentyFiveGigE 1/21
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface twentyFiveGigE 1/22
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface twentyFiveGigE 1/23
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface twentyFiveGigE 1/24
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface twentyFiveGigE 1/25
+ no ip address
+ mtu 9416
+!  
+ port-channel-protocol LACP 
+  port-channel 10 mode active 
+ no shutdown
+!
+interface twentyFiveGigE 1/26
+ no ip address
+ mtu 9416
+!  
+ port-channel-protocol LACP 
+  port-channel 10 mode active 
+ no shutdown
+!
+interface twentyFiveGigE 1/27
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface twentyFiveGigE 1/28
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface twentyFiveGigE 1/29
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface twentyFiveGigE 1/30
+ no ip address
+ mtu 9416
+ no shutdown
+!
+interface twentyFiveGigE 1/31
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface twentyFiveGigE 1/32
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface twentyFiveGigE 1/33
+ description Uplink-to-CCAS-Dell-B3-03
+ no ip address
+ mtu 9416
+ switchport
+ no spanning-tree 
+ no shutdown
+!
+interface twentyFiveGigE 1/34
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface twentyFiveGigE 1/35
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface twentyFiveGigE 1/36
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface twentyFiveGigE 1/37
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface twentyFiveGigE 1/38
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface twentyFiveGigE 1/39
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface twentyFiveGigE 1/40
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface twentyFiveGigE 1/41
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface twentyFiveGigE 1/42
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface twentyFiveGigE 1/43
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface twentyFiveGigE 1/44
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface twentyFiveGigE 1/45
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface twentyFiveGigE 1/46
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface twentyFiveGigE 1/47
+ description UPLINK-Z9100-1/33
+ no ip address
+ mtu 9416
+ portmode hybrid
+ switchport
+!
+ protocol lldp 
+ no shutdown
+!
+interface twentyFiveGigE 1/48
+ description Perfsonar-Temp
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface hundredGigE 1/49
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface hundredGigE 1/50
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface hundredGigE 1/51
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface hundredGigE 1/52
+ no ip address
+ mtu 9416
+ shutdown
+!
+interface hundredGigE 1/53
+ no ip address
+ mtu 9216
+ shutdown
+!
+interface hundredGigE 1/54
+ no ip address
+ mtu 9416
+ switchport
+ no shutdown
+!
+interface ManagementEthernet 1/1
+ shutdown
+!
+interface Port-channel 1
+ no ip address
+ mtu 9416
+ portmode hybrid
+ switchport
+ lacp long-timeout 
+ no shutdown
+!
+interface Port-channel 2
+ no ip address
+ mtu 9416
+ portmode hybrid
+ switchport
+ lacp long-timeout 
+ no shutdown
+!
+interface Port-channel 3
+ no ip address
+ mtu 9416
+ portmode hybrid
+ switchport
+ lacp long-timeout 
+ no shutdown
+!
+interface Port-channel 4
+ no ip address
+ mtu 9416
+ portmode hybrid
+ switchport
+ lacp long-timeout 
+ no shutdown
+!
+interface Port-channel 5
+ no ip address
+ mtu 9416
+ portmode hybrid
+ switchport
+ lacp long-timeout 
+ no shutdown
+!
+interface Port-channel 6
+ no ip address
+ mtu 9416
+ portmode hybrid
+ switchport
+ lacp long-timeout 
+ no shutdown
+!
+interface Port-channel 7
+ no ip address
+ mtu 9416
+ portmode hybrid
+ switchport
+ lacp long-timeout 
+ no shutdown
+!
+interface Port-channel 10
+ no ip address
+ mtu 9416
+ switchport
+ lacp long-timeout 
+ no shutdown
+!
+interface Port-channel 100
+ no ip address
+ mtu 9416
+ switchport
+ spanning-tree rstp loopguard 
+ spanning-tree mstp loopguard 
+ lacp long-timeout 
+ no shutdown
+!
+interface Vlan 1
+ mtu 9416
+!untagged twentyFiveGigE 1/47
+!untagged Port-channel 1-6
+!
+interface Vlan 2
+ ip address 172.30.253.244/23
+ mtu 9416
+ tagged twentyFiveGigE 1/19,1/47
+ tagged hundredGigE 1/54
+ tagged Port-channel 1-7,100
+ no shutdown
+!
+interface Vlan 301
+ no ip address
+ shutdown
+!
+interface Vlan 730
+ description Network
+ ip address 192.168.192.117/24
+ mtu 9416
+ tagged twentyFiveGigE 1/19,1/47
+ tagged hundredGigE 1/54
+ tagged Port-channel 1-6,100
+ no shutdown
+!
+interface Vlan 774
+ description Login Node Network
+ ip address 161.253.199.148/26
+ mtu 9416
+ tagged twentyFiveGigE 1/19,1/47
+ tagged hundredGigE 1/54
+ tagged Port-channel 3,10,100
+ untagged twentyFiveGigE 1/13,1/15,1/17,1/20
+ untagged Port-channel 7
+ shutdown
+!
+interface Vlan 776
+ no ip address
+ mtu 9416
+ tagged twentyFiveGigE 1/19,1/47
+ tagged hundredGigE 1/54
+ tagged Port-channel 5,10,100
+ untagged twentyFiveGigE 1/14,1/31-1/32
+ no shutdown
+!
+interface Vlan 800
+ description CAAREN
+ no ip address
+ mtu 9416
+ tagged twentyFiveGigE 1/19,1/47
+ untagged twentyFiveGigE 1/48
+ no shutdown
+!
+interface Vlan 3041
+ description CCAS-VLAN
+ ip address 172.20.254.12/24
+ mtu 9416
+ tagged twentyFiveGigE 1/33,1/47
+ no shutdown
+!
+logging 161.253.199.145
+logging 2606:69c0:9120:782c:20c:29ff:fe0b:8d46
+logging 192.168.192.115
+!
+banner login ^C
+*                                                        *
+*                        WARNING                         *
+*                                                        *
+*  This is a private device and can only be accessed by  *
+*    authorized personnel. Use of this resource can be   *
+* monitored and unauthorized use is strictly prohibited. *
+*                                                        *
+^C
+!
+snmp-server community rts-network ro 
+snmp-server enable traps bgp
+snmp-server enable traps snmp authentication coldstart linkdown linkup syslog-reachable syslog-unreachable 
+snmp-server enable traps vrrp
+snmp-server enable traps lacp
+snmp-server enable traps entity
+snmp-server enable traps stp
+snmp-server enable traps ecfm
+snmp-server enable traps vlt
+snmp-server enable traps fips
+snmp-server enable traps ets
+snmp-server enable traps xstp
+snmp-server enable traps isis
+snmp-server enable traps config 
+snmp-server enable traps pfc
+snmp-server enable traps envmon cam-utilization fan supply temperature 
+snmp-server enable traps ecmp
+snmp-server enable traps mac
+snmp-server host 192.168.192.249 traps version 2c rts-network udp-port 162
+snmp-server host 192.168.192.250 traps version 2c rts-network udp-port 162
+!
+no ip telnet server enable
+!
+ntp server 172.30.190.1
+!
+clock timezone Eastern -5 
+clock summer-time Central recurring 2 Sun Mar 02:00 1 Sun Nov 02:00 
+!
+ip ssh server enable
+!
+line console 0
+line vty 0
+line vty 1
+line vty 2
+line vty 3
+line vty 4
+line vty 5
+line vty 6
+line vty 7
+line vty 8
+line vty 9
+!
+reload-type
+ boot-type normal-reload
+ config-scr-download enable
+!
+end
